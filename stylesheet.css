@@ -56,6 +56,8 @@ a.navbar-brand:hover  {
 }
 div.container {
     display: flex;
+    position: fixed;
+    top: 200px;
 }
 .fa-github-square, .fa-twitter, .fa-codepen, .fa-linkedin, .fa-envelope {
     font-size: 40px;
