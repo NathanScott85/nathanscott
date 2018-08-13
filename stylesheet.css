@@ -1,0 +1,71 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+body.background{
+        background-color: #333338;
+   
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 7px;
+}
+    
+img.image {
+ 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 1%;
+    margin-left: 1%;
+
+    border-radius: 5px;
+    height: auto;
+    width: 98vw;
+    max-height: 100%;
+    position: relative;
+
+    -moz-box-shadow: 0 0 10px #FFFFFF;
+    -webkit-box-shadow: 0 0 3px #FFFFFF;
+    box-shadow: 0 0 10px #FFFFFF;
+}
+
+.image:hover {
+    -moz-box-shadow: 0 0 10px #337CA0 ;
+    -webkit-box-shadow: 0 0 3px #337CA0 ;
+    box-shadow: 0 0 10px #337CA0 ;
+}
+
+a.navbar-brand {
+    font-weight: bold !important;
+    color: #FFFFFF !important;
+    font-size: 40px;
+}
+li a {
+    color: #FFFFFF;
+
+} 
+a:hover {
+    color:#337CA0 !important;
+    text-decoration: none;
+}
+a.navbar-brand:hover  {
+        text-decoration: none;
+        color:#337CA0 !important;
+}
+
+.fa-github-square, .fa-twitter, .fa-codepen, .fa-linkedin, .fa-envelope {
+    font-size: 40px;
+    color: #FFFFFF;
+    text-align: center ;
+    display: flex;
+    margin: 15px;
+    
+}
+
+.fa-github-square:hover, .fa-twitter:hover, .fa-codepen:hover, .fa-linkedin:hover, .fa-envelope:hover {
+    color:#337CA0 !important;
+}
+
+
