@@ -19,7 +19,7 @@ h1 {
     padding-top: 20px;
 }
 h1:hover {
-
+        color: #333331;
 }
 .one {
     background-image: url(./assets/img/computer-dark.jpg);
@@ -49,6 +49,9 @@ h1:hover {
 }
 
 .three {
+    background-image: url(./assets/img/wallpaper_dark.jpg);
+    background-size: cover;
+    background-attachment: fixed;
     width: 95vw;
     height: 95vh;
     margin-top: 20px;
@@ -56,7 +59,11 @@ h1:hover {
     margin-right: auto;
     margin-bottom: 20px;
     border-radius: 5px;
-    background-color: #333A41;
+    -moz-box-shadow: 0 0 10px white;
+    -webkit-box-shadow: 0 0 3px white;
+    box-shadow: 0 0 10px white;
+   
+    position: relative
 }
 
 .four {
@@ -72,8 +79,8 @@ h1:hover {
 .fa-github-square, .fa-twitter, .fa-codepen, .fa-linkedin, .fa-envelope {
     font-size: 40px;
     color: #FFFFFF;
-    text-align: center ;
- 
+    text-align: center;
+    
     margin: 15px;
     
 }
