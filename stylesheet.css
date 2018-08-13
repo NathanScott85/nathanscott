@@ -54,7 +54,9 @@ a.navbar-brand:hover  {
         text-decoration: none;
         color:#337CA0 !important;
 }
-
+div.container {
+    display: flex;
+}
 .fa-github-square, .fa-twitter, .fa-codepen, .fa-linkedin, .fa-envelope {
     font-size: 40px;
     color: #FFFFFF;
