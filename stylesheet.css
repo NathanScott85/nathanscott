@@ -1,37 +1,92 @@
 * {
     font-family: 'Montserrat', sans-serif;
+    border: 0;
+    padding: 0;
+    margin: 0;
 }
 body.background{
-        background-color: #333338;
+        background-color: #333331;
    
 }
-
 li {
     text-decoration: none;
     list-style-type: none;
     padding: 7px;
 }
-    
-img.image {
- 
+h1 {
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 20px;
+}
+h1:hover {
+
+}
+.one {
+    background-image: url(./assets/img/computer-dark.jpg);
     background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    margin-top: 1%;
-    margin-left: 1%;
-
+    width: 95vw;
+    height: 95vh;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
     border-radius: 5px;
-    height: auto;
-    width: 98vw;
-    max-height: 100%;
-    position: relative;
-
-    -moz-box-shadow: 0 0 10px #FFFFFF;
-    -webkit-box-shadow: 0 0 3px #FFFFFF;
-    box-shadow: 0 0 10px #FFFFFF;
+    -moz-box-shadow: 0 0 10px white;
+    -webkit-box-shadow: 0 0 3px white;
+    box-shadow: 0 0 10px white;
+   
+    position: relative
+}
+.two{
+    width: 95vw;
+    height: 95vh;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color:#202C39;
 }
 
-.image:hover {
+.three {
+    width: 95vw;
+    height: 95vh;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #333A41;
+}
+
+.four {
+    width: 95vw;
+    height: 95vh;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #5D5D81;
+}
+.fa-github-square, .fa-twitter, .fa-codepen, .fa-linkedin, .fa-envelope {
+    font-size: 40px;
+    color: #FFFFFF;
+    text-align: center ;
+ 
+    margin: 15px;
+    
+}
+
+.fa-github-square:hover, .fa-twitter:hover, .fa-codepen:hover, .fa-linkedin:hover, .fa-envelope:hover {
+    color:#337CA0 !important;
+}
+
+div.dropdown-menu {
+    background-color: #FFFFFF;
+}
+
+.one:hover {
     -moz-box-shadow: 0 0 10px #337CA0 ;
     -webkit-box-shadow: 0 0 3px #337CA0 ;
     box-shadow: 0 0 10px #337CA0 ;
@@ -41,6 +96,11 @@ a.navbar-brand {
     font-weight: bold !important;
     color: #FFFFFF !important;
     font-size: 40px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+ul.navbar-nav {
+    margin-left: 20px;
 }
 li a {
     color: #FFFFFF;
@@ -54,22 +114,8 @@ a.navbar-brand:hover  {
         text-decoration: none;
         color:#337CA0 !important;
 }
-div.container {
-    display: flex;
-    position: fixed;
-    top: 200px;
-}
-.fa-github-square, .fa-twitter, .fa-codepen, .fa-linkedin, .fa-envelope {
-    font-size: 40px;
-    color: #FFFFFF;
-    text-align: center ;
-    display: flex;
-    margin: 15px;
-    
-}
 
-.fa-github-square:hover, .fa-twitter:hover, .fa-codepen:hover, .fa-linkedin:hover, .fa-envelope:hover {
-    color:#337CA0 !important;
-}
+
+
 
 
