@@ -94,6 +94,12 @@ h1:hover, h6:hover {
     width: 150px;
     height: auto;
     border-radius: 50%;
+    transition: all .2s ease-in-out;
+}
+
+.me:hover {
+	-webkit-transform: scale(0.9);
+	transform: scale(0.7);
 }
 .about:hover, .skills:hover, .contact:hover {
     -moz-box-shadow: 0 0 10px #ffffff ;
@@ -147,14 +153,14 @@ h1:hover, h6:hover {
     color:#337CA0 !important;
 }
 
-.fa-css3-alt,.fa-sass, .fa-html5, .fa-js-square, .fa-font-awesome-alt {
+.fa-css3-alt,.fa-sass, .fa-html5, .fa-js-square, .fa-font-awesome-alt, .fa-bold {
     font-size: 50px;
     color: #FFFFFF;
     text-align: center;
     margin: 15px;
 }
 
-.fa-css3-alt:hover,.fa-sass:hover, .fa-html5:hover, .fa-js-square:hover, .fa-font-awesome-alt:hover {
+.fa-css3-alt:hover,.fa-sass:hover, .fa-html5:hover, .fa-js-square:hover, .fa-font-awesome-alt:hover, .fa-bold:hover {
     color:#337CA0 !important;
 }
 
