@@ -46,14 +46,14 @@ div.fa-links {
    position: relative;
    padding-top: 50px;
    padding-left: 120px;
-    width: 40em;
-    margin-left:  auto;
-    margin-right: auto;
+   width: 40em;
+   margin-left:  auto;
+   margin-right: auto;
 }
 
 
 h1:hover, h6:hover {
-        color: #337CA0;
+    color: #337CA0;
 }
 .main {
     background-image: url(./assets/img/computer-dark.jpg);
@@ -68,7 +68,7 @@ h1:hover, h6:hover {
     position: relative
 }
 
-.main:hover, .three:hover {
+.main:hover, .project:hover {
     -moz-box-shadow: 0 0 10px #337CA0 ;
     -webkit-box-shadow: 0 0 3px #337CA0 ;
     box-shadow: 0 0 10px #337CA0 ;
@@ -84,7 +84,7 @@ h1:hover, h6:hover {
     background-color:#202C39;
 }
 
-.about:hover, .four:hover {
+.about:hover, .skills:hover, .contact:hover {
     -moz-box-shadow: 0 0 10px #ffffff ;
     -webkit-box-shadow: 0 0 3px #ffffff ;
     box-shadow: 0 0 10px #ffffff ;
@@ -112,7 +112,6 @@ h1:hover, h6:hover {
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
-   
     background-color: #5D5D81;
 }
 .contact {
@@ -147,8 +146,6 @@ h1:hover, h6:hover {
     color:#337CA0 !important;
 }
 
-
-
 a.navbar-brand {
     font-weight: bold !important;
     color: #FFFFFF !important;
@@ -158,6 +155,10 @@ a.navbar-brand {
 }
 ul.navbar-nav {
     margin-left: 20px;
+}
+
+.nav-item {
+    color: #FFFFFF; 
 }
 li a {
     color: #FFFFFF;
@@ -172,10 +173,17 @@ a.navbar-brand:hover  {
         color:#337CA0 !important;
 }
 
-.top {
-    float: right;
-    bottom: 0;
-    margin-right: 10px;
+.code-container{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.code {
+    color: #333331;
+    width: 250px;
+    background-color: white;
+    border-radius: 5px;
+   
 }
 
 
