@@ -18,10 +18,12 @@
     crossorigin="anonymous">
 
   <link class="icon" rel="icon" href="./assets/img/NS-Icon.jpg">
+
   <link rel="stylesheet" href="stylesheet.css" type="text/css">
   <!-- Links End-->
-  <!--Header Start-->
-  <header>
+</head>
+<!--Header Start-->
+<header id="header">
     <nav class="navbar navbar-dark bg-dark" href="#navbar">
       <a class="navbar-brand" href="#">Nathan Scott</a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"
@@ -44,13 +46,12 @@
           </li>
 
           <li class="nav-item active">
-              <a className="link" href="https://github.com/NathanScott85/ " rel="noopener noreferrer" target="_blank">Github</a>                 
-            </li>
+            <a className="link" href="https://github.com/NathanScott85/ " rel="noopener noreferrer" target="_blank">Github</a>
+          </li>
 
           <li class="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" 
-            aria-haspopup="true" aria-expanded="false">Free Code Camp</a>
-            
+            <a className="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Free Code Camp</a>
+
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
@@ -60,8 +61,7 @@
 
           <li class="nav-item dropdown">
 
-            <a className="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" 
-            aria-haspopup="true" aria-expanded="false">Projects</a>
+            <a className="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
 
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item" href="#">Action</a>
@@ -75,24 +75,52 @@
     </nav>
   </header>
   <!-- Header End-->
+  <!--Body Start-->
+<body class="background" id="body">
+  <div class="main" id="parallax">
+    <h1>Front-End Web Developer(Start);</h1>
+  </div>
 
-</head>
+  <div class="about">
+    <h1>About Me();</h1>
+    <p>Return</p>
+    <h2>&lt;Hello World/&gt;</h2>
+  </div>
 
-<body class="background">
-    <div class="one" id="main">
-      <h1>Front-End Web Developer</h1>
+  <div class="project">
+    <h1>function Projects() {</h1>
+    <p class="return">Return</p>
+    <div class="projects">
+      <p>
+        <a href="https://nathanscott85.github.io/google/" target="_blank">&lt;Google/&gt;</a>
+      </p>
     </div>
 
-    <div class="two">
-      <h1>About Me</h1>
-      <a href="#main">Back-to-Top</a>
+
+
+    <div class="projects">
+      <p>
+        <a href="https://nathanscott85.github.io/todo/" target="_blank">
+          &lt;Todo List/&gt;</a>
+      </p>
+
     </div>
-    <div class="three">
-        <h1>Projects</h1>
-        <a href="#main">Back-to-Top</a>
-    </div>
- <div class="four">
-        <h1>Contact</h1>
+    <h6>}</h6>
+  </div>
+
+  <div class="skills">
+    <h1>Knowledge(Begin);</h1>
+    <i class="fab fa-css3-alt"></i>
+    <i class="fab fa-sass"></i>
+    <i class="fab fa-html5"></i>
+    <i class="fab fa-js-square"></i>
+    <i class="fab fa-font-awesome-alt"></i>
+  </div>
+
+  <div class="contact">
+    <h1>Contact(end);</h1>
+    <p class="return">Return</p>
+    <div class="fa-links">
       <a className="fab fa-github-square" href="https://github.com/NathanScott85/" rel="noopener noreferrer" target="_blank">
         <i class="fab fa-github-square"></i>
       </a>
@@ -112,12 +140,15 @@
       <a className="fab fa-envelope" href="mailto:nathansfeely@gmail.com" target="_blank">
         <i class="far fa-envelope"></i>
       </a>
-      <a href="#main">Back-to-Top</a>
     </div>
-    
+  </div>
 
+  <div class="top" >
+      <a href="#header">Home</a>
+  </div>
 
 </body>
+<!--Body End--> 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
   crossorigin="anonymous"></script>
@@ -127,5 +158,6 @@
   crossorigin="anonymous"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
   crossorigin="anonymous"></script>
+<script src="main.js"></script>
 
 </html>

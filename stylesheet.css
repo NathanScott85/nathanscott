@@ -13,15 +13,49 @@ li {
     list-style-type: none;
     padding: 7px;
 }
-h1 {
+h1, h2 {
     color: #FFFFFF;
     text-align: center;
     padding-top: 20px;
 }
-h1:hover {
-        color: #333331;
+
+h6 {
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 40px; 
+    position: absolute;
+    bottom: 0px;
+    margin-left: auto;
 }
-.one {
+
+p.return {
+    color: #FFFFFF;
+    margin-left: 100px;
+}
+div.projects-container {
+    margin-left: 100px;
+}
+div.projects {
+    margin-left: 100px;
+    display: inline-block;
+   
+}
+
+div.fa-links {
+   position: relative;
+   padding-top: 50px;
+   padding-left: 120px;
+    width: 40em;
+    margin-left:  auto;
+    margin-right: auto;
+}
+
+
+h1:hover, h6:hover {
+        color: #337CA0;
+}
+.main {
     background-image: url(./assets/img/computer-dark.jpg);
     background-size: cover;
     width: 95vw;
@@ -31,13 +65,15 @@ h1:hover {
     margin-right: auto;
     margin-bottom: 20px;
     border-radius: 5px;
-    -moz-box-shadow: 0 0 10px white;
-    -webkit-box-shadow: 0 0 3px white;
-    box-shadow: 0 0 10px white;
-   
     position: relative
 }
-.two{
+
+.main:hover, .three:hover {
+    -moz-box-shadow: 0 0 10px #337CA0 ;
+    -webkit-box-shadow: 0 0 3px #337CA0 ;
+    box-shadow: 0 0 10px #337CA0 ;
+}
+.about{
     width: 95vw;
     height: 95vh;
     margin-top: 20px;
@@ -48,7 +84,13 @@ h1:hover {
     background-color:#202C39;
 }
 
-.three {
+.about:hover, .four:hover {
+    -moz-box-shadow: 0 0 10px #ffffff ;
+    -webkit-box-shadow: 0 0 3px #ffffff ;
+    box-shadow: 0 0 10px #ffffff ;
+}
+
+.project {
     background-image: url(./assets/img/wallpaper_dark.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -59,45 +101,53 @@ h1:hover {
     margin-right: auto;
     margin-bottom: 20px;
     border-radius: 5px;
-    -moz-box-shadow: 0 0 10px white;
-    -webkit-box-shadow: 0 0 3px white;
-    box-shadow: 0 0 10px white;
-   
     position: relative
 }
 
-.four {
+.skills {
     width: 95vw;
     height: 95vh;
-    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
+   
     background-color: #5D5D81;
 }
+.contact {
+    width: 95vw;
+    height: 95vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #59648E;
+}
 .fa-github-square, .fa-twitter, .fa-codepen, .fa-linkedin, .fa-envelope {
-    font-size: 40px;
+    font-size: 50px;
     color: #FFFFFF;
     text-align: center;
-    
     margin: 15px;
-    
-}
 
+}
 .fa-github-square:hover, .fa-twitter:hover, .fa-codepen:hover, .fa-linkedin:hover, .fa-envelope:hover {
     color:#337CA0 !important;
 }
 
-div.dropdown-menu {
-    background-color: #FFFFFF;
+.fa-css3-alt,.fa-sass, .fa-html5, .fa-js-square, .fa-font-awesome-alt {
+    font-size: 50px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 15px;
 }
 
-.one:hover {
-    -moz-box-shadow: 0 0 10px #337CA0 ;
-    -webkit-box-shadow: 0 0 3px #337CA0 ;
-    box-shadow: 0 0 10px #337CA0 ;
+.fa-css3-alt:hover,.fa-sass:hover, .fa-html5:hover, .fa-js-square:hover, .fa-font-awesome-alt:hover {
+    color:#337CA0 !important;
 }
+
+
 
 a.navbar-brand {
     font-weight: bold !important;
@@ -120,6 +170,12 @@ a:hover {
 a.navbar-brand:hover  {
         text-decoration: none;
         color:#337CA0 !important;
+}
+
+.top {
+    float: right;
+    bottom: 0;
+    margin-right: 10px;
 }
 
 
