@@ -9,11 +9,13 @@ body.background{
         background-color: #333331;
    
 }
+
 li {
     text-decoration: none;
     list-style-type: none;
     padding: 7px;
 }
+
 h1, h2, h4, p {
     color: #FFFFFF;
     text-align: center;
@@ -90,11 +92,13 @@ h1:hover, h6:hover {
     background-color:#202C39;
 }
 .me{
-    vertical-align: middle;
     max-width: 150px;
     width: 150px;
     height: auto;
     border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     transition: all .2s ease-in-out;
 }
 
@@ -208,8 +212,8 @@ a.navbar-brand:hover  {
     padding: 2px;
 }
 
-@media (max-height : 375px){
-    /* Styles */
+/* @media (max-width : 320px){
+   
     a.navbar-brand {
         font-size: 30px;
     }
@@ -219,8 +223,6 @@ a.navbar-brand:hover  {
     }
 
     div.main {
-    /* width: 100%;
-    height: 95vh; */
     background-size: cover;
     background-position: center;
     }  
@@ -262,7 +264,7 @@ a.navbar-brand:hover  {
         flex-direction: column
        
     }
-}
+} */
 
 
 
