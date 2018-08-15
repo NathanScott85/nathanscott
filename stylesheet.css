@@ -213,18 +213,24 @@ a.navbar-brand:hover  {
     a.navbar-brand {
         font-size: 30px;
     }
+
     h1{
         font-size: 30px;
     }
+
     div.main {
     background-size: cover;
     background-position: center;
     }  
+
     .me{
         max-width: 40%;
-        height: auto;
+    }
+
+    img.me {
         margin-right: auto;
-        margin-left: auto;
+        margin-left: 100px;
+       
     }
 
     .about {
