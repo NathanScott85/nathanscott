@@ -3,6 +3,7 @@
     border: 0;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body.background{
         background-color: #333331;
@@ -36,7 +37,7 @@ p {
 
 p.top{
     color: #333331;
-    
+    text-align: left;
 }
 div.projects-container {
     margin-left: 100px;
@@ -201,7 +202,10 @@ a.navbar-brand:hover  {
     width: 250px;
     background-color: white;
     border-radius: 5px;
-   
+    margin: auto;
+    width: 20%;
+    margin-top: 50px;
+    padding: 2px;
 }
 
 @media (max-width : 375px) {
@@ -221,6 +225,34 @@ a.navbar-brand:hover  {
         height: auto;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .about {
+        height: 115vh; 
+    }
+
+    a.links {
+        text-align: center;
+    }
+    .code {
+    color: #333331;
+    width: 250px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 50px;
+        
+    }
+
+    .top {
+        font-size: 14px;
+        
+    }
+    div.projects {
+        margin-left: 5px;
+        display: flex;
+        flex-direction: column
+       
     }
 }
 
