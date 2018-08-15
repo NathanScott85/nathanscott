@@ -208,7 +208,7 @@ a.navbar-brand:hover  {
     padding: 2px;
 }
 
-@media (max-width : 375px) and (max-width: 640px) {
+@media (max-height : 375px){
     /* Styles */
     a.navbar-brand {
         font-size: 30px;
@@ -219,6 +219,8 @@ a.navbar-brand:hover  {
     }
 
     div.main {
+    /* width: 100%;
+    height: 95vh; */
     background-size: cover;
     background-position: center;
     }  
