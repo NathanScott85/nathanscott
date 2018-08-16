@@ -160,7 +160,8 @@ h1:hover, h6:hover {
 }
 
 .fa-github-square, .fa-twitter, .fa-codepen, 
-    .fa-linkedin, .fa-envelope, .fa-free-code-camp {
+    .fa-linkedin, .fa-envelope, .fa-free-code-camp,
+    .fa-instagram {
     font-size: 50px;
     color: #FFFFFF;
     text-align: center;
@@ -168,7 +169,7 @@ h1:hover, h6:hover {
 
 }
 .fa-github-square:hover, .fa-twitter:hover, .fa-codepen:hover, 
-    .fa-linkedin:hover, .fa-envelope:hover, .fa-free-code-camp:hover {
+    .fa-linkedin:hover, .fa-envelope:hover, .fa-free-code-camp:hover, .fa-instagram:hover {
     color:#337CA0 !important;
 }
 
