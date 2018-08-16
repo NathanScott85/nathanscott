@@ -41,14 +41,23 @@ p.top{
     color: #333331;
     text-align: left;
 }
-div.projects-container {
-    margin-left: 100px;
-}
+
 div.projects {
     margin-left: 100px;
     display: inline-block;
-   
+    animation: blinker 1s linear infinite;
 }
+a.link::before {
+    content: '<';
+      left: 0;
+}
+
+a.link::after {
+    content: '/>';
+      right: 0;
+}
+
+
 
 div.fa-links {
    position: relative;
@@ -66,8 +75,8 @@ h1:hover, h6:hover {
 .main {
     background-image: url(./assets/img/computer-dark.jpg);
     background-size: cover;
-    width: 95vw;
-    height: 95vh;
+    /* width: 95vw;*/
+    height: 100vh; 
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -76,21 +85,69 @@ h1:hover, h6:hover {
     position: relative
 }
 
-.main:hover, .project:hover {
-    -moz-box-shadow: 0 0 10px #337CA0 ;
-    -webkit-box-shadow: 0 0 3px #337CA0 ;
-    box-shadow: 0 0 10px #337CA0 ;
-}
 .about{
-    width: 95vw;
-    height: 95vh;
+    /* width: 100vw;
+    height: 95vh; */
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
     border-radius: 5px;
+    padding-bottom: 20px;
     background-color:#202C39;
 }
+
+.project {
+    background-image: url(./assets/img/wallpaper_dark.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* width: 95vw; */
+    height: 100vh;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    position: relative
+}
+
+.skills {
+    /* /* width: 95vw; */
+    height: 100vh; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #5D5D81;
+}
+.contact {
+    /* width: 95vw; */
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #59648E;
+}
+.main:hover, .project:hover {
+    -moz-box-shadow: 0 0 10px #337CA0 ;
+    -webkit-box-shadow: 0 0 3px #337CA0 ;
+    box-shadow: 0 0 10px #337CA0 ;
+}
+
+.about:hover, .skills:hover, .contact:hover {
+    -moz-box-shadow: 0 0 10px #ffffff ;
+    -webkit-box-shadow: 0 0 3px #ffffff ;
+    box-shadow: 0 0 10px #ffffff ;
+}
+
+.me:hover {
+	-webkit-transform: scale(0.9);
+	transform: scale(0.7);
+}
+
 .me{
     max-width: 150px;
     width: 150px;
@@ -102,59 +159,16 @@ h1:hover, h6:hover {
     transition: all .2s ease-in-out;
 }
 
-.me:hover {
-	-webkit-transform: scale(0.9);
-	transform: scale(0.7);
-}
-.about:hover, .skills:hover, .contact:hover {
-    -moz-box-shadow: 0 0 10px #ffffff ;
-    -webkit-box-shadow: 0 0 3px #ffffff ;
-    box-shadow: 0 0 10px #ffffff ;
-}
-
-.project {
-    background-image: url(./assets/img/wallpaper_dark.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    width: 95vw;
-    height: 95vh;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    position: relative
-}
-
-.skills {
-    width: 95vw;
-    height: 95vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    background-color: #5D5D81;
-}
-.contact {
-    width: 95vw;
-    height: 95vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    background-color: #59648E;
-}
-
-.fa-github-square, .fa-twitter, .fa-codepen, .fa-linkedin, .fa-envelope {
+.fa-github-square, .fa-twitter, .fa-codepen, 
+    .fa-linkedin, .fa-envelope, .fa-free-code-camp {
     font-size: 50px;
     color: #FFFFFF;
     text-align: center;
     margin: 15px;
 
 }
-.fa-github-square:hover, .fa-twitter:hover, .fa-codepen:hover, .fa-linkedin:hover, .fa-envelope:hover {
+.fa-github-square:hover, .fa-twitter:hover, .fa-codepen:hover, 
+    .fa-linkedin:hover, .fa-envelope:hover, .fa-free-code-camp:hover {
     color:#337CA0 !important;
 }
 
@@ -210,9 +224,10 @@ a.navbar-brand:hover  {
     width: 20%;
     margin-top: 50px;
     padding: 2px;
+    
 }
 
-/* @media (max-width : 320px){
+@media (max-width : 400px){
    
     a.navbar-brand {
         font-size: 30px;
@@ -241,7 +256,7 @@ a.navbar-brand:hover  {
         height: 115vh; 
     }
 
-    a.links {
+    a.link {
         text-align: center;
     }
     .code {
@@ -264,7 +279,7 @@ a.navbar-brand:hover  {
         flex-direction: column
        
     }
-} */
+}
 
 
 
