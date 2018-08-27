@@ -97,7 +97,7 @@ div.content {
             overflow: hidden;
             height: 40px;
             padding: 0 40px;
-
+			color: $white;
         }
         &::before {
             content: '<';
@@ -257,6 +257,11 @@ span.info {
 		-moz-box-shadow: 0 0 10px $white;
 		-webkit-box-shadow: 0 0 3px $white;
 		box-shadow: 0 0 10px $white;
+	}
+	.container {
+		text-align: center;
+		padding: 20px 20px 20px 20px;
+
 	}
 }
 .contact {

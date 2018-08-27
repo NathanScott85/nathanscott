@@ -88,6 +88,7 @@ div.content div.projects span a.link {
   overflow: hidden;
   height: 40px;
   padding: 0 40px;
+  color: #ffff;
 }
 
 div.content div.projects span::before {
@@ -289,6 +290,11 @@ span.info {
 .skills:hover {
   -webkit-box-shadow: 0 0 3px #ffff;
   box-shadow: 0 0 10px #ffff;
+}
+
+.skills .container {
+  text-align: center;
+  padding: 20px 20px 20px 20px;
 }
 
 .contact {
