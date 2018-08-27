@@ -1,31 +1,33 @@
 $white: #ffff;
 $color_2: #333331;
-$hover: #337CA0;
-$font_family_1: 'Montserrat', sans-serif;
-$background: #333331;
-$background_color_2: #202C39;
-$background_color_3: #5D5D81;
-$background_color_4: #59648E;
-$background_white: white;
 
 $wisteria: #8e44ad;
-// $color_2: #2980b9;
-$color_3: #c0392b;
+$belize: #2980b9;
+$pomegranate: #c0392b;
 $color_4: #16a085;
 $color_5: #2c3e50;
 
-// 
+$hover: #337CA0;
+$Montserrat: 'Montserrat', sans-serif;
+$background: #333331;
+$about_section: #202C39;
+$skills_section: #5D5D81;
+$contact_section: #59648E;
+$background_white: white;
 
+// 
 * {
-	font-family: $font_family_1;
+	font-family: $Montserrat;
 	border: 0;
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	
 }
 body.background {
 	background-color: $background;
 }
+
 li {
 	text-decoration: none;
 	list-style-type: none;
@@ -159,10 +161,10 @@ h4 {
 	color: $wisteria;
 }
 .belize {
-	color: $color_2;
+	color: $belize;
 }
 .pomegranate {
-	color: $color_3;
+	color: $pomegranate;
 }
 .green {
 	color: $color_4;
@@ -208,7 +210,7 @@ div.fa-links {
 	margin-bottom: 20px;
 	border-radius: 5px;
 	padding-bottom: 20px;
-	background-color: $background_color_2;
+	background-color: $about_section;
 	&:hover {
 		-moz-box-shadow: 0 0 10px $white;
 		-webkit-box-shadow: 0 0 3px $white;
@@ -217,7 +219,10 @@ div.fa-links {
 }
 p.about-me {
 	margin-top: 10px;
-
+	a { color: inherit; 
+		text-decoration: underline;
+	} 
+	
 }
 span.info {
 	display:block;
@@ -247,7 +252,7 @@ span.info {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	border-radius: 5px;
-	background-color: $background_color_3;
+	background-color: $skills_section;
 	&:hover {
 		-moz-box-shadow: 0 0 10px $white;
 		-webkit-box-shadow: 0 0 3px $white;
@@ -261,7 +266,7 @@ span.info {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	border-radius: 5px;
-	background-color: $background_color_4;
+	background-color: $contact_section;
 	&:hover {
 		-moz-box-shadow: 0 0 10px $white;
 		-webkit-box-shadow: 0 0 3px $white;
@@ -273,14 +278,15 @@ span.info {
 		-webkit-transform: scale(0.9);
 		transform: scale(0.7);
 	}
-	max-width: 150px;
+	max-width: auto;
 	// width: 200px;
-	// height: auto;
-	border-radius: 50%;
+	height: 20%;
+	border-radius: 40%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	transition: all .2s ease-in-out;
+	border: $white
 }
 
 .fa-free-code-camp, .fa-codepen {
@@ -293,7 +299,7 @@ span.info {
 	}
 }
 
-.fa-twitter, .fa-github-square, .fa-linkedin, .fa-instagram , .fa-envelope {
+.fa-twitter, .fa-github-square, .fa-linkedin, .fa-instagram, .fa-envelope {
 	font-size: 50px;
 	color: $white;
 	text-align: center;
@@ -353,3 +359,9 @@ a {
     border-radius: 5px;
     transform: rotate(7deg);
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+
+	
+  }

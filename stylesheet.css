@@ -169,7 +169,7 @@ h4 {
 }
 
 .belize {
-  color: #333331;
+  color: #2980b9;
 }
 
 .pomegranate {
@@ -248,6 +248,11 @@ p.about-me {
   margin-top: 10px;
 }
 
+p.about-me a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 span.info {
   display: block;
   text-align: center;
@@ -302,13 +307,15 @@ span.info {
 }
 
 .me {
-  max-width: 150px;
-  border-radius: 50%;
+  max-width: auto;
+  height: 20%;
+  border-radius: 40%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+  border: #ffff;
 }
 
 .me:hover {
