@@ -8,6 +8,14 @@ $background_color_3: #5D5D81;
 $background_color_4: #59648E;
 $background_white: white;
 
+$wisteria: #8e44ad;
+// $color_2: #2980b9;
+$color_3: #c0392b;
+$color_4: #16a085;
+$color_5: #2c3e50;
+
+// 
+
 * {
 	font-family: $font_family_1;
 	border: 0;
@@ -114,6 +122,54 @@ div.content {
     }
 }
 
+.text {
+	margin-right: auto; margin-left: auto;
+	width: 500px;
+	height: 40px;
+
+}
+h4 {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+}
+.word {
+	position: absolute;
+	width: 220px;
+	opacity: 0;
+}
+.letter {
+	position: relative;
+	float: left;
+	transform: translateZ(25px);
+	transform-origin: 50% 50% 25px;
+}
+.letter.out {
+	transform: rotateX(90deg);
+	transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.letter.behind {
+	transform: rotateX(-90deg);
+}
+.letter.in {
+	transform: rotateX(0deg);
+	transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.wisteria {
+	color: $wisteria;
+}
+.belize {
+	color: $color_2;
+}
+.pomegranate {
+	color: $color_3;
+}
+.green {
+	color: $color_4;
+}
+.midnight {
+	color: $color_5;
+}
 
 @keyframes opacity {
     0%, 100% {opacity:0;}
@@ -158,6 +214,14 @@ div.fa-links {
 		-webkit-box-shadow: 0 0 3px $white;
 		box-shadow: 0 0 10px $white;
 	}
+}
+p.about-me {
+	margin-top: 10px;
+
+}
+span.info {
+	display:block;
+	text-align:center;
 }
 .project {
 	background-image: url(./assets/img/wallpaper_dark.jpg);
@@ -210,8 +274,8 @@ div.fa-links {
 		transform: scale(0.7);
 	}
 	max-width: 150px;
-	width: 150px;
-	height: auto;
+	// width: 200px;
+	// height: auto;
 	border-radius: 50%;
 	display: block;
 	margin-left: auto;
