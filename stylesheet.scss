@@ -74,11 +74,12 @@ h6 {
 		color: $hover;
 	}
 }
+// Contact return home
 p.top {
-	color: $color_2;
+	// color: $color_2;
 	text-align: left;
 }
-
+// projects wrapper
 div.content {
   position: absolute;
   top: 50%;
@@ -90,15 +91,14 @@ div.content {
         display: flex;
         position: relative;
 
-
         span { 
-            
+			 
         a.link {
             overflow: hidden;
             height: 40px;
             padding: 0 40px;
 			color: $white;
-        }
+			text-decoration: underline; 
         &::before {
             content: '<';
             left: 0;
@@ -178,14 +178,7 @@ h4 {
     50% {opacity:1;}
   }
 
-div.fa-links {
-	position: relative;
-	padding-top: 50px;
-	padding-left: 120px;
-	width: 40em;
-	margin-left: auto;
-	margin-right: auto;
-}
+
 .main {
 	background-image: url(./assets/img/computer-dark.jpg);
 	background-size: cover;
@@ -303,16 +296,24 @@ span.info {
 		color: $hover !important;
 	}
 }
-
-.fa-twitter, .fa-github-square, .fa-linkedin, .fa-instagram, .fa-envelope {
-	font-size: 50px;
-	color: $white;
-	text-align: center;
-	margin: 15px;
-	&:hover {
-		color: $hover !important;
+div.fa-links {
+		position: relative;
+		// padding-top: 50px;
+		// padding-left: 120px;
+		// width: 40em;
+		// margin-left: auto;
+		// margin-right: auto;
+	.fa-twitter, .fa-github-square, .fa-linkedin, .fa-instagram, .fa-envelope {
+		font-size: 50px;
+		color: $white;
+		text-align: center;
+		margin: 15px;
+		&:hover {
+			color: $hover !important;
+		}
 	}
 }
+
 
 .fa-bold, .fa-font-awesome-alt, .fa-html5, .fa-js-square, .fa-sass, .fa-css3-alt   {
 	font-size: 50px;
@@ -366,7 +367,7 @@ a {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  
+	
 
 	
   }
