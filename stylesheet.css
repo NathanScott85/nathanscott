@@ -321,7 +321,6 @@ span.info {
   margin-right: auto;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
-  border: #ffff;
 }
 
 .me:hover {
