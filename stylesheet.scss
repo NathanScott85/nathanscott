@@ -24,6 +24,10 @@ $background_white: white;
 	box-sizing: border-box;
 	
 }
+html, body {
+	width: auto!important; 
+	overflow-x: hidden!important
+} 
 body.background {
 	background-color: $background;
 }
@@ -74,11 +78,7 @@ h6 {
 		color: $hover;
 	}
 }
-// Contact return home
-p.top {
-	color: $color_2;
-	text-align: left;
-}
+
 // projects wrapper
 div.content {
   position: absolute;
@@ -270,7 +270,40 @@ span.info {
 		-webkit-box-shadow: 0 0 3px $white;
 		box-shadow: 0 0 10px $white;
 	}
+	.container {
+		text-align: center;
+		padding: 20px 20px 20px 20px;
+
+	}
+	.fa-twitter, .fa-github-square, .fa-linkedin, .fa-instagram, .fa-envelope {
+		font-size: 50px;
+		color: $white;
+		text-align: center;
+		margin: 15px;
+		&:hover {
+			color: $hover !important;
+		}
+	}
+	.code {
+		color: $color_2;
+		width: 250px;
+		background-color: $background_white;
+		margin: auto;
+		// margin: 1em;
+// margin: -3px;
+		margin-top: 20px;
+		// margin-right: 10px;
+		// margin-left: 10px;
+		padding: 2px;
+		border-radius: 5px;
+		transform: rotate(7deg);
+	}
+	p.top {
+		color: $color_2;
+		text-align: left;
+	}
 }
+
 .me {
 	&:hover {
 		-webkit-transform: scale(0.9);
@@ -286,34 +319,6 @@ span.info {
 	transition: all .2s ease-in-out;
 	border: $white
 }
-
-.fa-free-code-camp, .fa-codepen {
-	font-size: 50px;
-	color: $white;
-	text-align: center;
-	margin: 15px;
-	&:hover {
-		color: $hover !important;
-	}
-}
-div.fa-links {
-		position: relative;
-		padding-top: 50px;
-		padding-left: 120px;
-		width: 40em;
-		margin-left: auto;
-		margin-right: auto;
-	.fa-twitter, .fa-github-square, .fa-linkedin, .fa-instagram, .fa-envelope {
-		font-size: 50px;
-		color: $white;
-		text-align: center;
-		margin: 15px;
-		&:hover {
-			color: $hover !important;
-		}
-	}
-}
-
 
 .fa-bold, .fa-font-awesome-alt, .fa-html5, .fa-js-square, .fa-sass, .fa-css3-alt   {
 	font-size: 50px;
@@ -347,27 +352,27 @@ a {
 		text-decoration: none;
 	}
 }
-.code-container {
-	position: relative;
-	margin-left: auto;
-    margin-right: auto;
-    margin-top: 250px;
-    
-}
-.code {
-	color: $color_2;
-	width: 250px;
-	background-color: $background_white;
-	margin: auto;
-	width: 20%;
-	margin-top: 50px;
-    padding: 2px;
-    border-radius: 5px;
-    transform: rotate(7deg);
-}
 
-// @media (min-width: 320px) and (max-width: 480px) {
-	
-
-	
-// }
+@media only screen and (max-height:640px) and (max-width: 411px) {
+	.code {
+		margin: auto;
+	}
+	div.main {
+		background-position: center;	
+	}
+	.project{
+		background-position: center;
+	}
+	h4 {
+		font-size: 14px;
+	}
+	span.info {
+		font-size: 14px;
+	}
+	a.navbar-brand {
+		font-size: 30px;
+	}
+	.fa-twitter, .fa-github-square, .fa-linkedin, .fa-instagram, .fa-envelope {
+		font-size: 20px;
+	}
+}

@@ -7,6 +7,11 @@
           box-sizing: border-box;
 }
 
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
 body.background {
   background-color: #333331;
 }
@@ -61,11 +66,6 @@ h6 {
 
 h6:hover {
   color: #337CA0;
-}
-
-p.top {
-  color: #333331;
-  text-align: left;
 }
 
 div.content {
@@ -303,6 +303,39 @@ span.info {
   box-shadow: 0 0 10px #ffff;
 }
 
+.contact .container {
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+}
+
+.contact .fa-twitter, .contact .fa-github-square, .contact .fa-linkedin, .contact .fa-instagram, .contact .fa-envelope {
+  font-size: 50px;
+  color: #ffff;
+  text-align: center;
+  margin: 15px;
+}
+
+.contact .fa-twitter:hover, .contact .fa-github-square:hover, .contact .fa-linkedin:hover, .contact .fa-instagram:hover, .contact .fa-envelope:hover {
+  color: #337CA0 !important;
+}
+
+.contact .code {
+  color: #333331;
+  width: 250px;
+  background-color: white;
+  margin: auto;
+  margin-top: 20px;
+  padding: 2px;
+  border-radius: 5px;
+  -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
+}
+
+.contact p.top {
+  color: #333331;
+  text-align: left;
+}
+
 .me {
   max-width: auto;
   height: 20%;
@@ -318,37 +351,6 @@ span.info {
 .me:hover {
   -webkit-transform: scale(0.9);
   transform: scale(0.7);
-}
-
-.fa-free-code-camp, .fa-codepen {
-  font-size: 50px;
-  color: #ffff;
-  text-align: center;
-  margin: 15px;
-}
-
-.fa-free-code-camp:hover, .fa-codepen:hover {
-  color: #337CA0 !important;
-}
-
-div.fa-links {
-  position: relative;
-  padding-top: 50px;
-  padding-left: 120px;
-  width: 40em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-div.fa-links .fa-twitter, div.fa-links .fa-github-square, div.fa-links .fa-linkedin, div.fa-links .fa-instagram, div.fa-links .fa-envelope {
-  font-size: 50px;
-  color: #ffff;
-  text-align: center;
-  margin: 15px;
-}
-
-div.fa-links .fa-twitter:hover, div.fa-links .fa-github-square:hover, div.fa-links .fa-linkedin:hover, div.fa-links .fa-instagram:hover, div.fa-links .fa-envelope:hover {
-  color: #337CA0 !important;
 }
 
 .fa-bold, .fa-font-awesome-alt, .fa-html5, .fa-js-square, .fa-sass, .fa-css3-alt {
@@ -388,23 +390,27 @@ a:hover {
   text-decoration: none;
 }
 
-.code-container {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 250px;
-}
-
-.code {
-  color: #333331;
-  width: 250px;
-  background-color: white;
-  margin: auto;
-  width: 20%;
-  margin-top: 50px;
-  padding: 2px;
-  border-radius: 5px;
-  -webkit-transform: rotate(7deg);
-          transform: rotate(7deg);
+@media only screen and (max-height: 640px) and (max-width: 411px) {
+  .code {
+    margin: auto;
+  }
+  div.main {
+    background-position: center;
+  }
+  .project {
+    background-position: center;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  span.info {
+    font-size: 14px;
+  }
+  a.navbar-brand {
+    font-size: 30px;
+  }
+  .fa-twitter, .fa-github-square, .fa-linkedin, .fa-instagram, .fa-envelope {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=stylesheet.css.map */
