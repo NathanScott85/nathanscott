@@ -76,7 +76,7 @@ h6 {
 }
 // Contact return home
 p.top {
-	// color: $color_2;
+	color: $color_2;
 	text-align: left;
 }
 // projects wrapper
@@ -97,8 +97,8 @@ div.content {
             overflow: hidden;
             height: 40px;
             padding: 0 40px;
-			color: $white;
-			text-decoration: underline; 
+			color: $belize;
+
         &::before {
             content: '<';
             left: 0;
@@ -123,7 +123,7 @@ div.content {
     
     }
 }
-
+}
 .text {
 	margin-right: auto; margin-left: auto;
 	width: 500px;
@@ -279,7 +279,7 @@ span.info {
 	max-width: auto;
 	// width: 200px;
 	height: 20%;
-	border-radius: 40%;
+	border-radius: 50%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -298,11 +298,11 @@ span.info {
 }
 div.fa-links {
 		position: relative;
-		// padding-top: 50px;
-		// padding-left: 120px;
-		// width: 40em;
-		// margin-left: auto;
-		// margin-right: auto;
+		padding-top: 50px;
+		padding-left: 120px;
+		width: 40em;
+		margin-left: auto;
+		margin-right: auto;
 	.fa-twitter, .fa-github-square, .fa-linkedin, .fa-instagram, .fa-envelope {
 		font-size: 50px;
 		color: $white;
@@ -366,8 +366,8 @@ a {
     transform: rotate(7deg);
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+// @media (min-width: 320px) and (max-width: 480px) {
 	
 
 	
-  }
+// }

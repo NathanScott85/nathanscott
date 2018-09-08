@@ -88,21 +88,21 @@ div.content div.projects span a.link {
   overflow: hidden;
   height: 40px;
   padding: 0 40px;
-  color: #ffff;
+  color: #2980b9;
 }
 
-div.content div.projects span::before {
+div.content div.projects span a.link::before {
   content: '<';
   left: 0;
 }
 
-div.content div.projects span::after {
+div.content div.projects span a.link::after {
   content: '/>';
   position: absolute;
   right: 0;
 }
 
-div.content div.projects span:after, div.content div.projects span:before {
+div.content div.projects span a.link:after, div.content div.projects span a.link:before {
   position: absolute;
   top: 0;
   color: #16a085;
@@ -201,15 +201,6 @@ h4 {
   50% {
     opacity: 1;
   }
-}
-
-div.fa-links {
-  position: relative;
-  padding-top: 50px;
-  padding-left: 120px;
-  width: 40em;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .main {
@@ -321,6 +312,7 @@ span.info {
   margin-right: auto;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+  border: #ffff;
 }
 
 .me:hover {
@@ -339,14 +331,23 @@ span.info {
   color: #337CA0 !important;
 }
 
-.fa-twitter, .fa-github-square, .fa-linkedin, .fa-instagram, .fa-envelope {
+div.fa-links {
+  position: relative;
+  padding-top: 50px;
+  padding-left: 120px;
+  width: 40em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.fa-links .fa-twitter, div.fa-links .fa-github-square, div.fa-links .fa-linkedin, div.fa-links .fa-instagram, div.fa-links .fa-envelope {
   font-size: 50px;
   color: #ffff;
   text-align: center;
   margin: 15px;
 }
 
-.fa-twitter:hover, .fa-github-square:hover, .fa-linkedin:hover, .fa-instagram:hover, .fa-envelope:hover {
+div.fa-links .fa-twitter:hover, div.fa-links .fa-github-square:hover, div.fa-links .fa-linkedin:hover, div.fa-links .fa-instagram:hover, div.fa-links .fa-envelope:hover {
   color: #337CA0 !important;
 }
 
