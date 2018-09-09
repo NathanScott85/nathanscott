@@ -1,4 +1,4 @@
-$white: #ffff;
+$white: #fff;
 $color_2: #333331;
 
 $wisteria: #8e44ad;
@@ -22,12 +22,13 @@ $background_white: white;
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	
 }
+
 html, body {
 	width: auto!important; 
 	overflow-x: hidden!important
-} 
+}
+
 body.background {
 	background-color: $background;
 }
@@ -41,25 +42,27 @@ li {
 	}
 }
 h1 {
-    color: $white;
+	color: $white;
 	text-align: center;
-    padding-top: 20px;
+	padding-top: 20px;
+
 	&:hover {
 		color: $hover;
 	}
 }
 
 h4 {
-    color: $white;
+  color: $white;
 	text-align: center;
-    padding-top: 20px;
-
+	padding-top: 20px;
 }
+
 p {
 	color: $white;
 	text-align: center;
-    padding-top: 20px;
+	padding-top: 20px;
 } 
+
 h2 {
 	color: $white;
 	text-align: center;
@@ -87,88 +90,100 @@ div.content {
   transform: translate(-50%, -50%);
   overflow:hidden;
   
-    div.projects {   
-        display: flex;
-        position: relative;
+  div.projects {   
+		display: flex;
+		position: relative;
 
-        span { 
-			 
-        a.link {
-            overflow: hidden;
-            height: 40px;
-            padding: 0 40px;
+		span { 
+		
+		a.link {
+			overflow: hidden;
+			height: 40px;
+			padding: 0 40px;
 			color: $belize;
 
-        &::before {
-            content: '<';
-            left: 0;
-        }
-        &::after {
-            content: '/>';
-            position: absolute;
-            right: 0;
-        }
-        &:after, &:before {
-            position: absolute;
-            top: 0;
-            color: #16a085;
-            -webkit-animation-name: opacity;
-            -webkit-animation-duration: 2s;
-            -webkit-animation-iteration-count: infinite;
-            animation-name: opacity;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-        }
-    }
-    
-    }
+			&::before {
+				content: '<';
+				left: 0;
+			}
+
+			&::after {
+				content: '/>';
+				position: absolute;
+				right: 0;
+			}
+
+			&:after, &:before {
+				position: absolute;
+				top: 0;
+				color: #16a085;
+				-webkit-animation-name: opacity;
+				-webkit-animation-duration: 2s;
+				-webkit-animation-iteration-count: infinite;
+				animation-name: opacity;
+				animation-duration: 2s;
+				animation-iteration-count: infinite;
+			}
+    }  
+  }
 }
+
 }
 .text {
 	margin-right: auto; margin-left: auto;
 	width: 500px;
 	height: 40px;
-
 }
+
 h4 {
 	display: inline-block;
 	vertical-align: top;
 	margin: 0;
 }
+
 .word {
 	position: absolute;
 	width: 220px;
 	opacity: 0;
 }
+
 .letter {
 	position: relative;
 	float: left;
 	transform: translateZ(25px);
 	transform-origin: 50% 50% 25px;
 }
+
 .letter.out {
 	transform: rotateX(90deg);
 	transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
 .letter.behind {
 	transform: rotateX(-90deg);
 }
+
 .letter.in {
 	transform: rotateX(0deg);
 	transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
 .wisteria {
 	color: $wisteria;
 }
+
 .belize {
 	color: $belize;
 }
+
 .pomegranate {
 	color: $pomegranate;
 }
+
 .green {
 	color: $color_4;
 }
+
 .midnight {
 	color: $color_5;
 }
@@ -180,7 +195,7 @@ h4 {
 
 
 .main {
-	background-image: url(./assets/img/computer-dark.jpg);
+	background-image: url(../img/computer-dark.jpg);
 	background-size: cover;
 	height: 100vh;
 	margin-top: 20px;
@@ -195,6 +210,7 @@ h4 {
 		box-shadow: 0 0 10px #337CA0;
 	}
 }
+
 .about {
 	height: 100vh;
 	margin-top: 20px;
@@ -210,6 +226,7 @@ h4 {
 		box-shadow: 0 0 10px $white;
 	}
 }
+
 p.about-me {
 	margin-top: 10px;
 	a { color: inherit; 
@@ -217,12 +234,14 @@ p.about-me {
 	} 
 	
 }
+
 span.info {
 	display:block;
 	text-align:center;
 }
+
 .project {
-	background-image: url(./assets/img/wallpaper_dark.jpg);
+	background-image: url(../img/wallpaper_dark.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	height: 100vh;
@@ -232,12 +251,14 @@ span.info {
 	margin-bottom: 20px;
 	border-radius: 5px;
 	position: relative;
+
 	&:hover {
 		-moz-box-shadow: 0 0 10px #337CA0;
 		-webkit-box-shadow: 0 0 3px #337CA0;
 		box-shadow: 0 0 10px #337CA0;
 	}
 }
+
 .skills {
 	height: 100vh;
 	margin-left: auto;
@@ -254,9 +275,9 @@ span.info {
 	.container {
 		text-align: center;
 		padding: 20px 20px 20px 20px;
-
 	}
 }
+
 .contact {
 	height: 100vh;
 	margin-left: auto;
@@ -265,16 +286,19 @@ span.info {
 	margin-bottom: 20px;
 	border-radius: 5px;
 	background-color: $contact_section;
+
 	&:hover {
 		-moz-box-shadow: 0 0 10px $white;
 		-webkit-box-shadow: 0 0 3px $white;
 		box-shadow: 0 0 10px $white;
 	}
+
 	.container {
 		text-align: center;
 		padding: 20px 20px 20px 20px;
 
 	}
+
 	.fa-twitter, .fa-github-square, .fa-linkedin, .fa-instagram, .fa-envelope {
 		font-size: 50px;
 		color: $white;
@@ -284,13 +308,14 @@ span.info {
 			color: $hover !important;
 		}
 	}
+
 	.code {
 		color: $color_2;
 		width: 250px;
 		background-color: $background_white;
 		margin: auto;
 		// margin: 1em;
-// margin: -3px;
+		// margin: -3px;
 		margin-top: 20px;
 		// margin-right: 10px;
 		// margin-left: 10px;
@@ -298,6 +323,7 @@ span.info {
 		border-radius: 5px;
 		transform: rotate(7deg);
 	}
+
 	p.top {
 		color: $color_2;
 		text-align: left;
@@ -325,6 +351,7 @@ span.info {
 	color: $white;
 	text-align: center;
 	margin: 15px;
+
 	&:hover {
 		color: $hover !important;
 	}
@@ -335,17 +362,21 @@ a.navbar-brand {
 	font-size: 40px;
 	text-decoration: none;
 	margin-left: 20px;
+
 	&:hover {
 		text-decoration: none;
 		color: $hover !important;
 	}
 }
+
 ul.navbar-nav {
 	margin-left: 20px;
 }
+
 .nav-item {
 	color: $white;
 }
+
 a {
 	&:hover {
 		color: $hover !important;
