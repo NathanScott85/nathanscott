@@ -9,7 +9,7 @@ html, body {
   width: auto !important;
   overflow-x: hidden !important; }
 
-body.background {
+.background {
   background-color: #333331; }
 
 li {
@@ -52,28 +52,28 @@ h6 {
   h6:hover {
     color: #337CA0; }
 
-div.content {
+.content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden; }
-  div.content div.projects {
+  .content .projects {
     display: flex;
     position: relative; }
-    div.content div.projects span a.link {
+    .content .projects span .link {
       overflow: hidden;
       height: 40px;
       padding: 0 40px;
       color: #2980b9; }
-      div.content div.projects span a.link::before {
+      .content .projects span .link::before {
         content: '<';
         left: 0; }
-      div.content div.projects span a.link::after {
+      .content .projects span .link::after {
         content: '/>';
         position: absolute;
         right: 0; }
-      div.content div.projects span a.link:after, div.content div.projects span a.link:before {
+      .content .projects span .link:after, .content .projects span .link:before {
         position: absolute;
         top: 0;
         color: #16a085;
@@ -85,19 +85,13 @@ div.content {
         animation-iteration-count: infinite; }
 
 .text {
-  margin-right: auto;
-  margin-left: auto;
-  width: 500px;
-  height: 40px; }
-
-h4 {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0; }
+  display: block;
+  margin: 0 auto 0 -150px; }
 
 .word {
   position: absolute;
-  width: 220px;
+  width: 200px;
+  margin-left: 8px;
   opacity: 0; }
 
 .letter {
@@ -153,26 +147,29 @@ h4 {
     box-shadow: 0 0 10px #337CA0; }
 
 .about {
-  height: 100vh;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
+  margin: 20px auto;
   border-radius: 5px;
-  padding-bottom: 20px;
+  padding: 10px 10px 20px;
   background-color: #202C39; }
+  .about h2 {
+    padding-top: 10px;
+    margin-bottom: 20px; }
+  .about img {
+    height: 150px; }
   .about:hover {
     -moz-box-shadow: 0 0 10px #fff;
     -webkit-box-shadow: 0 0 3px #fff;
     box-shadow: 0 0 10px #fff; }
 
-p.about-me {
-  margin-top: 10px; }
-  p.about-me a {
+.about-me {
+  padding: 10px;
+  margin: 10px auto 0;
+  max-width: 500px; }
+  .about-me a {
     color: inherit;
     text-decoration: underline; }
 
-span.info {
+.info {
   display: block;
   text-align: center; }
 
@@ -239,7 +236,7 @@ span.info {
     padding: 2px;
     border-radius: 5px;
     transform: rotate(7deg); }
-  .contact p.top {
+  .contact .top {
     color: #333331;
     text-align: left; }
 
