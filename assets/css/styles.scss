@@ -364,7 +364,7 @@ h6 {
 	}
 }
 
-a.navbar-brand {
+.navbar-brand {
 	font-weight: bold !important;
 	color: $white !important;
 	font-size: 40px;
@@ -377,7 +377,7 @@ a.navbar-brand {
 	}
 }
 
-ul.navbar-nav {
+.navbar-nav {
 	margin-left: 20px;
 }
 
@@ -396,7 +396,7 @@ a {
 	.code {
 		margin: auto;
 	}
-	div.main {
+	.main {
 		background-position: center;	
 	}
 	.project{
@@ -405,10 +405,10 @@ a {
 	h4 {
 		font-size: 14px;
 	}
-	span.info {
+	.info {
 		font-size: 14px;
 	}
-	a.navbar-brand {
+	.navbar-brand {
 		font-size: 30px;
 	}
 	.fa-twitter, .fa-github-square, .fa-linkedin, .fa-instagram, .fa-envelope {
