@@ -7,7 +7,8 @@
           box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: auto !important;
   overflow-x: hidden !important;
 }
@@ -33,7 +34,7 @@ h1 {
 }
 
 h1:hover {
-  color: #337CA0;
+  color: #337ca0;
 }
 
 h4 {
@@ -65,7 +66,7 @@ h6 {
 }
 
 h6:hover {
-  color: #337CA0;
+  color: #337ca0;
 }
 
 .content {
@@ -92,12 +93,12 @@ h6:hover {
 }
 
 .content .projects span .link::before {
-  content: '<';
+  content: "<";
   left: 0;
 }
 
 .content .projects span .link::after {
-  content: '/>';
+  content: "/>";
   position: absolute;
   right: 0;
 }
@@ -179,7 +180,8 @@ h6:hover {
 }
 
 @-webkit-keyframes opacity {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0;
   }
   50% {
@@ -188,7 +190,8 @@ h6:hover {
 }
 
 @keyframes opacity {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0;
   }
   50% {
@@ -209,15 +212,15 @@ h6:hover {
 }
 
 .main:hover {
-  -webkit-box-shadow: 0 0 3px #337CA0;
-  box-shadow: 0 0 10px #337CA0;
+  -webkit-box-shadow: 0 0 3px #337ca0;
+  box-shadow: 0 0 10px #337ca0;
 }
 
 .about {
   margin: 20px auto;
   border-radius: 5px;
   padding: 10px 10px 20px;
-  background-color: #202C39;
+  background-color: #202c39;
 }
 
 .about h2 {
@@ -264,8 +267,8 @@ h6:hover {
 }
 
 .project:hover {
-  -webkit-box-shadow: 0 0 3px #337CA0;
-  box-shadow: 0 0 10px #337CA0;
+  -webkit-box-shadow: 0 0 3px #337ca0;
+  box-shadow: 0 0 10px #337ca0;
 }
 
 .skills {
@@ -275,7 +278,7 @@ h6:hover {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
-  background-color: #5D5D81;
+  background-color: #5d5d81;
 }
 
 .skills:hover {
@@ -295,7 +298,7 @@ h6:hover {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
-  background-color: #59648E;
+  background-color: #59648e;
 }
 
 .contact:hover {
@@ -308,15 +311,23 @@ h6:hover {
   padding: 20px 20px 20px 20px;
 }
 
-.contact .fa-twitter, .contact .fa-github-square, .contact .fa-linkedin, .contact .fa-instagram, .contact .fa-envelope {
+.contact .fa-twitter,
+.contact .fa-github-square,
+.contact .fa-linkedin,
+.contact .fa-instagram,
+.contact .fa-envelope {
   font-size: 50px;
   color: #fff;
   text-align: center;
   margin: 15px;
 }
 
-.contact .fa-twitter:hover, .contact .fa-github-square:hover, .contact .fa-linkedin:hover, .contact .fa-instagram:hover, .contact .fa-envelope:hover {
-  color: #337CA0 !important;
+.contact .fa-twitter:hover,
+.contact .fa-github-square:hover,
+.contact .fa-linkedin:hover,
+.contact .fa-instagram:hover,
+.contact .fa-envelope:hover {
+  color: #337ca0 !important;
 }
 
 .contact .code {
@@ -343,8 +354,8 @@ h6:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   border: #fff;
 }
 
@@ -353,15 +364,25 @@ h6:hover {
   transform: scale(0.7);
 }
 
-.fa-bold, .fa-font-awesome-alt, .fa-html5, .fa-js-square, .fa-sass, .fa-css3-alt {
+.fa-bold,
+.fa-font-awesome-alt,
+.fa-html5,
+.fa-js-square,
+.fa-sass,
+.fa-css3-alt {
   font-size: 50px;
   color: #fff;
   text-align: center;
   margin: 15px;
 }
 
-.fa-bold:hover, .fa-font-awesome-alt:hover, .fa-html5:hover, .fa-js-square:hover, .fa-sass:hover, .fa-css3-alt:hover {
-  color: #337CA0 !important;
+.fa-bold:hover,
+.fa-font-awesome-alt:hover,
+.fa-html5:hover,
+.fa-js-square:hover,
+.fa-sass:hover,
+.fa-css3-alt:hover {
+  color: #337ca0 !important;
 }
 
 .navbar-brand {
@@ -374,7 +395,7 @@ h6:hover {
 
 .navbar-brand:hover {
   text-decoration: none;
-  color: #337CA0 !important;
+  color: #337ca0 !important;
 }
 
 .navbar-nav {
@@ -386,7 +407,7 @@ h6:hover {
 }
 
 a:hover {
-  color: #337CA0 !important;
+  color: #337ca0 !important;
   text-decoration: none;
 }
 
@@ -409,7 +430,11 @@ a:hover {
   .navbar-brand {
     font-size: 30px;
   }
-  .fa-twitter, .fa-github-square, .fa-linkedin, .fa-instagram, .fa-envelope {
+  .fa-twitter,
+  .fa-github-square,
+  .fa-linkedin,
+  .fa-instagram,
+  .fa-envelope {
     font-size: 20px;
   }
 }
