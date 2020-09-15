@@ -369,7 +369,7 @@ h6:hover {
 .fa-html5,
 .fa-js-square,
 .fa-sass,
-.fa-css3-alt {
+.fa-css3-alt, .fa-react {
   font-size: 50px;
   color: #fff;
   text-align: center;
@@ -381,7 +381,7 @@ h6:hover {
 .fa-html5:hover,
 .fa-js-square:hover,
 .fa-sass:hover,
-.fa-css3-alt:hover {
+.fa-css3-alt:hover, .fa-react:hover {
   color: #337ca0 !important;
 }
 
