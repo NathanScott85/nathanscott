@@ -1,8 +1,12 @@
 import React from 'react';
-
+import Routes from './app-routes';
+import { createBrowserHistory } from 'history';
+export const history = createBrowserHistory();
 function App() {
   return (
-    <div>here</div>
+    <>
+    <Routes history={history} />
+    </>
   );
 }
 
