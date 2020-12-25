@@ -2,7 +2,6 @@ import React from 'react';
 import { History } from 'history';
 import { Router, Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
-// import { Home, About, Contact, NotFoundPage, Guides } from '../pages/';
 
 interface IProps {
     history: History;
