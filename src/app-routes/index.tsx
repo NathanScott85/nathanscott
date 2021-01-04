@@ -38,7 +38,7 @@ const Routes: React.FunctionComponent<IProps> = ({
             <Switch>
                 <Route
                     exact
-                    path={process.env.PUBLIC_URL + '/'}
+                    path={'/'}
                     render={({ history }: IProps) => <Home history={history} />}
                 />
                 <Route
