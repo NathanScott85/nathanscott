@@ -1,7 +1,7 @@
 import React from 'react';
+import styled from 'styled-components';
 import { History } from 'history';
 import { Router, Switch, Route } from 'react-router-dom';
-import styled from 'styled-components';
 
 interface IProps {
     history: History;
@@ -58,6 +58,7 @@ export default Routes;
 const LeftContainer = styled.div`
     height: 100vh;
     width: 25%;
+    background-color: #FAF9F4;
     position: relative;
     font-family: 'Tangerine', cursive;
     font-weight: 400;
@@ -71,15 +72,17 @@ const RightContainer = styled.div`
     height: 100vh;
     padding: 2rem;
     width: 75%;
+    /* color: #FAF9F4; */
+    color: #58A6FF;
+    background-color: #1F2326;
     border-left: 2px solid lightgray;
-    width: 58.333333vw;
     padding-left: 8vw;
     padding-bottom: 40px;
     h1 {
         line-height: 1em;
         font-family: 'Cinzel', serif;
         font-weight: 500;
-        font-size: 2.4vw;
+        font-size: 2.4rem;
     }
     p {
         font-family: 'Open Sans', sans-serif;
