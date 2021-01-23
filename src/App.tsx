@@ -13,7 +13,6 @@ function App() {
         <GlobalStyle />
       <Routes history={history} />
       </ThemeProvider>
-   
     </AppContainer>
   );
 }
@@ -29,4 +28,3 @@ const AppContainer = styled.div`
         font-family: 'Roboto', sans-serif;
     `};
 `;
-    /* ${theme.fonts.tangerine} */
