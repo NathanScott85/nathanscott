@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Exclamation } from '../../components';
+import { Exclamation } from '../../components/img';
 
 const NotFoundPage = (history: any) => {
     return (
@@ -9,6 +9,7 @@ const NotFoundPage = (history: any) => {
             <RightContainer>
                 <Exclamation />
                 The Page you were looking for was not found.
+                <a href={'/'}>Home</a> {/*using link here returns a blank page not sure why, maybe split page setup?*/ }
             </RightContainer>
         </NotFoundContainer>
     );
@@ -30,6 +31,10 @@ const LeftContainer = styled.div`
 `;
 
 const RightContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     padding: 2rem;
     width: 75%;
@@ -46,6 +51,9 @@ const RightContainer = styled.div`
     }
     p {
         font-family: 'Open Sans', sans-serif;
+    }
+    a{ 
+        color: #58a6ff; 
     }
 `;
 const NotFoundContainer = styled.div`

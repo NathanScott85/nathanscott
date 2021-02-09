@@ -1,29 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Development } from '../../components';
-
+import { SocialLinks } from '../../components';
 
 const Home = (history: any) => {
     return (
         <HomeContainer>
             <LeftContainer>NS</LeftContainer>
             <RightContainer>
-                <h1>
-                    Nathan Scott
-                </h1>
-                <p>
-                WHAT I DO
-                </p>
-              <Card>
-
-              <div>
-                <Development />
-                <div>
-                  <h4>Development</h4>
-                  <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                </div>
-              </div>
-              </Card>
+                <h1>Nathan Scott</h1>
+                <p>Front End Developer and Mentor</p>
+                <SocialLinks />
             </RightContainer>
         </HomeContainer>
     );
@@ -31,14 +17,9 @@ const Home = (history: any) => {
 
 export default Home;
 
-const Card = styled.div`
-    padding: 20px;
-    background-color: #ffffff;
-    color: #1F2326;
-`;
 const LeftContainer = styled.div`
     width: 25%;
-    background-color: #FAF9F4;
+    background-color: #faf9f4;
     position: relative;
     font-family: 'Tangerine', cursive;
     font-weight: 400;
@@ -52,12 +33,12 @@ const LeftContainer = styled.div`
 const RightContainer = styled.div`
     padding: 2rem;
     width: 75%;
-    color: #58A6FF;
-    background-color: #1F2326;
+    color: #58a6ff;
+    background-color: #1f2326;
     border-left: 2px solid lightgray;
     padding-left: 8vw;
     padding-bottom: 40px;
-    
+
     h1 {
         line-height: 1em;
         font-family: 'Cinzel', serif;

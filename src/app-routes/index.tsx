@@ -31,5 +31,3 @@ const Routes: React.FunctionComponent<IProps> = ({
 };
 
 export default Routes;
-
-
