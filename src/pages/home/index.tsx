@@ -2,12 +2,7 @@ import React, { useState } from 'react';
 import { Col, Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import {
-    ContactForm,
-    Header,
-    SocialLinks,
-    TechnicalKnowledge,
-    BurgerMenu,
-    Menu,
+    SocialLinks
 } from '../../components';
 
 const Home: React.FunctionComponent = (): JSX.Element => {
@@ -21,16 +16,9 @@ const Home: React.FunctionComponent = (): JSX.Element => {
     return (
         <HomeContainer>
             <RightContainer>
-                <Header>
-                    <BurgerMenu isOpen={isMenuOpen} setOpen={setMenuOpen} />
-                    <Menu
-                        isOpen={isMenuOpen}
-                        setOpen={setMenuOpen}
-                        setCurrentComponent={onClick}
-                    />
-                </Header>
-                {<TechnicalKnowledge currentComponent={currentComponent} />}
-                {<ContactForm currentComponent={currentComponent} />}
+                <h1>Nathan Scott</h1>
+                <p>Front End Developer and Mentor</p>
+                <SocialLinks />
             </RightContainer>
         </HomeContainer>
     );
@@ -38,9 +26,10 @@ const Home: React.FunctionComponent = (): JSX.Element => {
 
 export default Home;
 
-const LeftContainer = styled(Col)`
-    height: 100vh;
+const LeftContainer = styled.div`
+    width: 25%;
     background-color: #faf9f4;
+    position: relative;
     font-family: 'Tangerine', cursive;
     font-weight: 400;
     font-size: 48px;
@@ -56,9 +45,10 @@ const LeftContainer = styled(Col)`
 
 const RightContainer = styled.div`
     padding: 2rem;
+    width: 75%;
     color: #58a6ff;
-    font-family: 'Cinzel', serif;
     background-color: #1f2326;
+    border-left: 2px solid lightgray;
     padding-left: 8vw;
     padding-bottom: 40px;
 
