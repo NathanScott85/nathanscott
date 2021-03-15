@@ -8,6 +8,8 @@ import BurgerMenu from './burger-menu';
 import LinkedIn from './linked-in';
 import Twitter from './twitter';
 import BriefCase from './briefcase';
+import Home from './home';
+import Person from './person'
 
 export {
     BriefCase,
@@ -16,8 +18,10 @@ export {
     Exclamation,
     Email,
     Github,
+    Home,
     Instagram,
     LinkedIn,
+    Person,
     RightArrow,
     Twitter
 }

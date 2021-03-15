@@ -5,9 +5,10 @@ export interface ISVG {
     width?: string;
     height?: string;
     fill?: string;
+    className: string
 }
 
-const Development = ({
+const SVG = ({
     width = '40px',
     viewBox = '0 0 512 512',
     height = '30px',
@@ -53,4 +54,4 @@ const Development = ({
     );
 };
 
-export default Development;
+export default SVG;
