@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Instagram, Github, Email } from '../img';
+import { Github, Email, LinkedIn, Twitter } from '../img/svg';
 
 interface ISocialLinks {
     fill?: string;
@@ -8,10 +8,17 @@ interface ISocialLinks {
 export const SocialLinks = ({ fill }: ISocialLinks) => {
     return (
         <SocialLinksContainer>
+             <SocialLinksTag
+                target="_blank"
+                href=""
+            >
+               <Twitter className="social-links-svg" fill={fill} />
+            </SocialLinksTag>
             <SocialLinksTag
                 target="_blank"
-                href="https://www.instagram.com/nathanscott285"
+                href="https://www.linkedin.com/in/nathan-scott/"
             >
+               <LinkedIn className="social-links-svg" fill={fill} />
             </SocialLinksTag>
             <SocialLinksTag
                 target="_blank"

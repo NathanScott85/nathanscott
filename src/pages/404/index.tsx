@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { SocialLinks } from '../../components';
-import { Exclamation } from '../../components/img';
+import { Exclamation } from '../../components/img/svg';
 import { Header } from '../../components/header/index';
 
 const NotFoundPage = (history: any) => {
