@@ -1,15 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
+import { SocialLinks } from '../../components';
 import { Exclamation } from '../../components/img';
+import { Header } from '../../components/header/index';
 
 const NotFoundPage = (history: any) => {
     return (
         <NotFoundContainer>
-            <LeftContainer>NS</LeftContainer>
+            <LeftContainer>
+                <h1>NS</h1>
+                <SocialLinks fill={'black'} />
+            </LeftContainer>
             <RightContainer>
+                <Header />
+                
+                <NotFoundWrapper>
                 <Exclamation />
                 The Page you were looking for was not found.
-                <a href={'/'}>Home</a> {/*using link here returns a blank page not sure why, maybe split page setup?*/ }
+                <a href={'/'}>Home</a>{' '}
+                {/*using link here returns a blank page not sure why, maybe split page setup?*/} 
+                </NotFoundWrapper>
+   
             </RightContainer>
         </NotFoundContainer>
     );
@@ -26,21 +37,22 @@ const LeftContainer = styled.div`
     font-weight: 400;
     font-size: 48px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    h1 {
+        font-size: 3rem;
+    }
 `;
 
 const RightContainer = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     padding: 2rem;
     width: 75%;
     color: #58a6ff;
     background-color: #1f2326;
-    border-left: 2px solid lightgray;
     padding-left: 8vw;
     padding-bottom: 40px;
     h1 {
@@ -52,11 +64,19 @@ const RightContainer = styled.div`
     p {
         font-family: 'Open Sans', sans-serif;
     }
-    a{ 
-        color: #58a6ff; 
+    a {
+        color: #58a6ff;
     }
 `;
 const NotFoundContainer = styled.div`
     display: flex;
     flex-direction: row;
+`;
+
+const NotFoundWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 `;

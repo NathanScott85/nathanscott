@@ -1,15 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SocialLinks } from '../../components';
+import { Header, SocialLinks, TechnicalKnowledge } from '../../components';
 
 const Home = (history: any) => {
     return (
         <HomeContainer>
-            <LeftContainer>NS</LeftContainer>
+            <LeftContainer>
+                <h1>NS</h1>
+                <SocialLinks fill={'black'} />
+            </LeftContainer>
             <RightContainer>
-                <h1>Nathan Scott</h1>
-                <p>Front End Developer and Mentor</p>
-                <SocialLinks />
+                <Header />
+                <TechnicalKnowledge />
             </RightContainer>
         </HomeContainer>
     );
@@ -18,6 +20,7 @@ const Home = (history: any) => {
 export default Home;
 
 const LeftContainer = styled.div`
+    height: 100vh;
     width: 25%;
     background-color: #faf9f4;
     position: relative;
@@ -25,17 +28,21 @@ const LeftContainer = styled.div`
     font-weight: 400;
     font-size: 48px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+
+    h1 {
+        font-size: 3rem;
+    }
 `;
 
 const RightContainer = styled.div`
     padding: 2rem;
     width: 75%;
     color: #58a6ff;
+    font-family: 'Cinzel', serif;
     background-color: #1f2326;
-    border-left: 2px solid lightgray;
     padding-left: 8vw;
     padding-bottom: 40px;
 
@@ -45,10 +52,16 @@ const RightContainer = styled.div`
         font-weight: 500;
         font-size: 2.4rem;
     }
+
     p {
         font-family: 'Open Sans', sans-serif;
     }
+    a {
+        color: #58a6ff;
+        text-decoration: none;
+    }
 `;
+
 const HomeContainer = styled.div`
     display: flex;
     flex-direction: row;
