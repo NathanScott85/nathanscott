@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SocialLinks } from '../../components';
+import { SocialLinks, Header } from '../../components';
 import { Exclamation } from '../../components/img/svg';
-import { Header } from '../../components/header/index';
 
 const NotFoundPage: React.FunctionComponent = (): JSX.Element => {
     return (
@@ -13,11 +12,10 @@ const NotFoundPage: React.FunctionComponent = (): JSX.Element => {
             </LeftContainer>
             <RightContainer>
                 <Header />
-
                 <NotFoundWrapper>
                     <Exclamation />
                     The Page you were looking for was not found.
-                    <a href={'/'}>Home</a>{' '}
+                    <a href={'/'}>Home</a>
                     {/*using link here returns a blank page not sure why, maybe split page setup?*/}
                 </NotFoundWrapper>
             </RightContainer>
@@ -78,4 +76,5 @@ const NotFoundWrapper = styled.div`
     align-items: center;
     justify-content: center;
     margin: auto;
+    font-family: 'Open Sans', sans-serif;
 `;

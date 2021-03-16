@@ -1,11 +1,5 @@
 import React from 'react';
-
-export interface ISVG {
-    viewBox?: string;
-    width?: string;
-    height?: string;
-    fill?: string;
-}
+import { ISVG } from './';
 
 const SVG: React.FunctionComponent<ISVG> = ({
     width = '25px',
