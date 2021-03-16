@@ -4,7 +4,7 @@ import { SocialLinks } from '../../components';
 import { Exclamation } from '../../components/img/svg';
 import { Header } from '../../components/header/index';
 
-const NotFoundPage = (history: any) => {
+const NotFoundPage: React.FunctionComponent = (): JSX.Element => {
     return (
         <NotFoundContainer>
             <LeftContainer>
@@ -13,14 +13,13 @@ const NotFoundPage = (history: any) => {
             </LeftContainer>
             <RightContainer>
                 <Header />
-                
+
                 <NotFoundWrapper>
-                <Exclamation />
-                The Page you were looking for was not found.
-                <a href={'/'}>Home</a>{' '}
-                {/*using link here returns a blank page not sure why, maybe split page setup?*/} 
+                    <Exclamation />
+                    The Page you were looking for was not found.
+                    <a href={'/'}>Home</a>{' '}
+                    {/*using link here returns a blank page not sure why, maybe split page setup?*/}
                 </NotFoundWrapper>
-   
             </RightContainer>
         </NotFoundContainer>
     );

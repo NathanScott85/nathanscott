@@ -4,9 +4,9 @@ const theme: DefaultTheme = {
     colors: {
         white: '#FFFFFF',
         black: '#2c353c',
-        lightGray: '#f7f4f2'
-     }
-}
+        lightGray: '#f7f4f2',
+    },
+};
 
 const GlobalStyle = createGlobalStyle`
     
@@ -30,4 +30,4 @@ const GlobalStyle = createGlobalStyle`
 }
 `;
 
-export { theme, GlobalStyle};
+export { theme, GlobalStyle };

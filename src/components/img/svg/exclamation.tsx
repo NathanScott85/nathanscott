@@ -7,8 +7,8 @@ export interface ISVG {
     fill?: string;
 }
 
-export const SVG = ({
-    viewBox="0 0 192 512",
+export const SVG: React.FunctionComponent<ISVG> = ({
+    viewBox = '0 0 192 512',
     width = '30px',
 }: ISVG): JSX.Element => {
     return (

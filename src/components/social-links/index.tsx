@@ -5,20 +5,19 @@ import { Github, Email, LinkedIn, Twitter } from '../img/svg';
 interface ISocialLinks {
     fill?: string;
 }
-export const SocialLinks = ({ fill }: ISocialLinks) => {
+export const SocialLinks: React.FunctionComponent<ISocialLinks> = ({
+    fill,
+}: ISocialLinks): JSX.Element => {
     return (
         <SocialLinksContainer>
-             <SocialLinksTag
-                target="_blank"
-                href=""
-            >
-               <Twitter className="social-links-svg" fill={fill} />
+            <SocialLinksTag target="_blank" href="">
+                <Twitter className="social-links-svg" fill={fill} />
             </SocialLinksTag>
             <SocialLinksTag
                 target="_blank"
                 href="https://www.linkedin.com/in/nathan-scott/"
             >
-               <LinkedIn className="social-links-svg" fill={fill} />
+                <LinkedIn className="social-links-svg" fill={fill} />
             </SocialLinksTag>
             <SocialLinksTag
                 target="_blank"

@@ -13,17 +13,11 @@ const Routes: React.FunctionComponent<IProps> = ({
     return (
         <Router history={history}>
             <Switch>
-                <Route
-                    exact
-                    path={'/'}
-                    render={({ history }: IProps) => <Home history={history} />}
-                />
+                <Route exact path={'/'} render={() => <Home />} />
                 <Route
                     exact
                     path={process.env.PUBLIC_URL + '*'}
-                    render={({ history }: IProps) => (
-                        <NotFoundPage history={history} />
-                    )}
+                    render={() => <NotFoundPage />}
                 />
             </Switch>
         </Router>

@@ -1,17 +1,11 @@
 import React from 'react';
+import { ISVG } from './';
 
-export interface ISVG {
-    viewBox?: string;
-    width?: string;
-    height?: string;
-    fill?: string;
-}
-
-const SVG = ({
+const SVG: React.FunctionComponent<ISVG> = ({
     width = '25px',
     viewBox = '0 0 25 19',
     height = '19px',
-}: ISVG) => {
+}: ISVG): JSX.Element => {
     return (
         <svg width={width} height={height} viewBox={viewBox} fill="none">
             <path

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Header, SocialLinks, TechnicalKnowledge } from '../../components';
 
-const Home = (history: any) => {
+const Home: React.FunctionComponent = (): JSX.Element => {
     return (
         <HomeContainer>
             <LeftContainer>

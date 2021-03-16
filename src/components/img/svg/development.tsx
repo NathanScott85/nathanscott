@@ -5,14 +5,14 @@ export interface ISVG {
     width?: string;
     height?: string;
     fill?: string;
-    className: string
+    className: string;
 }
 
-const SVG = ({
+const SVG: React.FunctionComponent<ISVG> = ({
     width = '40px',
     viewBox = '0 0 512 512',
     height = '30px',
-}: ISVG) => {
+}: ISVG): JSX.Element => {
     return (
         <>
             <svg

@@ -9,7 +9,15 @@ import LinkedIn from './linked-in';
 import Twitter from './twitter';
 import BriefCase from './briefcase';
 import Home from './home';
-import Person from './person'
+import Person from './person';
+
+export interface ISVG {
+    viewBox?: string;
+    width?: string;
+    height?: string;
+    fill?: string;
+    className?: string;
+}
 
 export {
     BriefCase,
@@ -23,5 +31,5 @@ export {
     LinkedIn,
     Person,
     RightArrow,
-    Twitter
-}
+    Twitter,
+};
