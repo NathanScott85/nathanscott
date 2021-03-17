@@ -70,6 +70,7 @@ const FormContentWrapper = styled.div`
 `;
 
 const Form = styled.form`
+    margin: 20% 10% 0% 0%;
     background-color: #faf9f4;
     color: #1f2326;
     display: flex;

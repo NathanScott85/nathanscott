@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {
+    // ContactForm,
     Header,
     SocialLinks,
     TechnicalKnowledge,
@@ -16,6 +17,7 @@ const Home: React.FunctionComponent = (): JSX.Element => {
             <RightContainer>
                 <Header />
                 <TechnicalKnowledge />
+                {/* <ContactForm /> */}
             </RightContainer>
         </HomeContainer>
     );

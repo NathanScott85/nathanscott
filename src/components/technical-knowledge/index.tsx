@@ -60,6 +60,7 @@ const TechnicalKnowledgeContainer = styled.div`
     h3 {
         padding-top: 1rem;
     }
+    margin: 20% 20% 0% 0%;
 `;
 
 const Frontend = styled.div`
