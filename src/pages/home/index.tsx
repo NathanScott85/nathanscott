@@ -66,7 +66,7 @@ const RightContainer = styled.div`
     }
 `;
 
-const HomeContainer = styled.main`
+const HomeContainer = styled.div`
     display: flex;
     flex-direction: row;
 `;
