@@ -62,11 +62,13 @@ const FormContent = styled.div`
     flex-direction: row;
     font-family: 'Cinzel', serif;
 `;
+
 const FormContentWrapper = styled.div`
     display: flex;
     flex-direction: column;
     margin: 8px 30px;
 `;
+
 const Form = styled.form`
     background-color: #faf9f4;
     color: #1f2326;
