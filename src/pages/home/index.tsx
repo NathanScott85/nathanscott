@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Header, SocialLinks, TechnicalKnowledge } from '../../components';
+import {
+    Header,
+    SocialLinks,
+    TechnicalKnowledge,
+} from '../../components';
 
 const Home: React.FunctionComponent = (): JSX.Element => {
     return (
@@ -62,7 +66,7 @@ const RightContainer = styled.div`
     }
 `;
 
-const HomeContainer = styled.div`
+const HomeContainer = styled.main`
     display: flex;
     flex-direction: row;
 `;

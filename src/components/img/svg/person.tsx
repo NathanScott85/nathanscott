@@ -9,7 +9,13 @@ const SVG: React.FunctionComponent<ISVG> = ({
     className,
 }: ISVG): JSX.Element => {
     return (
-        <svg width={width} height={height} viewBox={viewBox} fill="none">
+        <svg
+            className={className}
+            width={width}
+            height={height}
+            viewBox={viewBox}
+            fill="none"
+        >
             <path
                 d="M3.125 5.20833C3.125 2.33185 5.45685 0 8.33333 0C11.2098 0 13.5417 2.33185 13.5417 5.20833C13.5417 8.08482 11.2098 10.4167 8.33333 10.4167C5.45685 10.4167 3.125 8.08482 3.125 5.20833ZM8.33333 8.33333C10.0592 8.33333 11.4583 6.93422 11.4583 5.20833C11.4583 3.48244 10.0592 2.08333 8.33333 2.08333C6.60744 2.08333 5.20833 3.48244 5.20833 5.20833C5.20833 6.93422 6.60744 8.33333 8.33333 8.33333Z"
                 fill={fill}
