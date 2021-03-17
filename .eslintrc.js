@@ -15,7 +15,7 @@ module.exports = {
     extends: [
       "plugin:react/recommended", 
       "plugin:@typescript-eslint/recommended", 
-      "prettier/@typescript-eslint", 
+      "prettier", 
       "plugin:prettier/recommended",
     ],
     rules: {
@@ -23,5 +23,5 @@ module.exports = {
       "no-use-before-define": "off",
       "@typescript-eslint/no-explicit-any": "off",
       "@typescript-eslint/no-use-before-define": "off"
-    }, 
+    },
 };

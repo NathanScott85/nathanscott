@@ -4,6 +4,7 @@
   "homepage": "https://nathanscott85.github.io",
   "private": true,
   "dependencies": {
+    "@formspree/react": "^2.2.3",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -36,7 +37,10 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "airbnb",
+      "plugin:jsx-a11y/recommended",
+      "prettier",
+      "prettier/react"
     ]
   },
   "browserslist": {
@@ -50,5 +54,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "prettier": "^2.2.1"
   }
 }
