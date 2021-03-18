@@ -1,6 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Header, SocialLinks, TechnicalKnowledge } from '../../components';
+import {
+    // ContactForm,
+    Header,
+    SocialLinks,
+    TechnicalKnowledge,
+} from '../../components';
 
 const Home: React.FunctionComponent = (): JSX.Element => {
     return (
@@ -12,6 +17,7 @@ const Home: React.FunctionComponent = (): JSX.Element => {
             <RightContainer>
                 <Header />
                 <TechnicalKnowledge />
+                {/* <ContactForm /> */}
             </RightContainer>
         </HomeContainer>
     );

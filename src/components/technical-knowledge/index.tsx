@@ -53,13 +53,14 @@ export const TechnicalKnowledge: React.FunctionComponent = (): JSX.Element => {
     );
 };
 
-const TechnicalKnowledgeContainer = styled.main`
+const TechnicalKnowledgeContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     h3 {
         padding-top: 1rem;
     }
+    margin: 20% 20% 0% 0%;
 `;
 
 const Frontend = styled.div`
