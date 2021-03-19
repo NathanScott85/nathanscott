@@ -2,7 +2,11 @@ import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import styled from 'styled-components';
 
-export const ContactForm: React.FunctionComponent = (): JSX.Element => {
+export interface IProps {
+    className?: string;
+}
+
+export const ContactForm: React.FunctionComponent<IProps> = ({}: IProps): JSX.Element => {
     const [state, handleSubmit] = useForm('mrgonvbw');
     if (state.succeeded) {
         return <ContactForm />;
@@ -47,32 +51,12 @@ export const ContactForm: React.FunctionComponent = (): JSX.Element => {
         </Form>
     );
 };
-const Label = styled.label`
-    width: 387px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 20px;
-    color: #000000;
-    margin: 8px 0px;
-`;
 
-const FormContent = styled.div`
-    display: flex;
-    flex-direction: row;
-    font-family: 'Cinzel', serif;
-`;
-
-const FormContentWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin: 8px 30px;
-`;
-
-const Form = styled.form`
+const Form = styled.form<{ isClicked?: any }>`
     margin: 20% 10% 0% 0%;
     background-color: #faf9f4;
     color: #1f2326;
+    /* display: ${({ isClicked }) => (isClicked ? 'flex' : 'none')}; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,6 +84,28 @@ const Form = styled.form`
         align-items: center;
         justify-content: center;
     }
+`;
+
+const FormContent = styled.div`
+    display: flex;
+    flex-direction: row;
+    font-family: 'Cinzel', serif;
+`;
+
+const FormContentWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: 8px 30px;
+`;
+
+const Label = styled.label`
+    width: 387px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    margin: 8px 0px;
 `;
 
 const Paragraph = styled.p`

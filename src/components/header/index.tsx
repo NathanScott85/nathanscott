@@ -1,12 +1,18 @@
 import React from 'react';
 import { SocialLinks } from '..';
 
-export const Header: React.FunctionComponent = (): JSX.Element => {
+interface IProps {
+    children?: React.ReactNode;
+}
+export const Header: React.FunctionComponent = ({
+    children,
+}: IProps): JSX.Element => {
     return (
         <header>
             <h1>Nathan Scott</h1>
-            <p>Front End Developer and Mentor</p>
+            <p>Front End Developer, Designer and Mentor</p>
             <SocialLinks />
+            {children}
         </header>
     );
 };

@@ -1,13 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 import {
-    // ContactForm,
+    ContactForm,
     Header,
     SocialLinks,
     TechnicalKnowledge,
 } from '../../components';
+import { BurgerMenu } from '../../components/burger-menu';
+import { Menu } from '../../components/burger-menu/menu';
 
 const Home: React.FunctionComponent = (): JSX.Element => {
+    const [isOpen, setOpen] = React.useState(false);
+
     return (
         <HomeContainer>
             <LeftContainer>
@@ -15,9 +19,12 @@ const Home: React.FunctionComponent = (): JSX.Element => {
                 <SocialLinks fill={'black'} />
             </LeftContainer>
             <RightContainer>
-                <Header />
+                <Header>
+                    <BurgerMenu isOpen={isOpen} setOpen={setOpen} />
+                    <Menu isOpen={isOpen} />
+                </Header>
                 <TechnicalKnowledge />
-                {/* <ContactForm /> */}
+                <ContactForm />
             </RightContainer>
         </HomeContainer>
     );
@@ -27,9 +34,7 @@ export default Home;
 
 const LeftContainer = styled.div`
     height: 100vh;
-    width: 25%;
     background-color: #faf9f4;
-    position: relative;
     font-family: 'Tangerine', cursive;
     font-weight: 400;
     font-size: 48px;
@@ -45,7 +50,6 @@ const LeftContainer = styled.div`
 
 const RightContainer = styled.div`
     padding: 2rem;
-    width: 75%;
     color: #58a6ff;
     font-family: 'Cinzel', serif;
     background-color: #1f2326;
@@ -69,6 +73,6 @@ const RightContainer = styled.div`
 `;
 
 const HomeContainer = styled.div`
-    display: flex;
-    flex-direction: row;
+    display: inline-grid;
+    grid-template-columns: 25% 75%;
 `;

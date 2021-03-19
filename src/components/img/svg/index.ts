@@ -4,7 +4,7 @@ import RightArrow from './right-arrow';
 import Email from './email';
 import Github from './github';
 import Instagram from './instagram';
-import BurgerMenu from './burger-menu';
+import { SVG as ThreeLines } from './burger-menu';
 import LinkedIn from './linked-in';
 import Twitter from './twitter';
 import BriefCase from './briefcase';
@@ -21,7 +21,7 @@ export interface ISVG {
 
 export {
     BriefCase,
-    BurgerMenu,
+    ThreeLines,
     Development,
     Exclamation,
     Email,
