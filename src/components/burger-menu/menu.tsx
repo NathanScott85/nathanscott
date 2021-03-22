@@ -1,29 +1,38 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled, { css } from 'styled-components';
-import { BriefCase, Email, Home, Person } from '../img/svg';
+import { svg } from '../../lib/website-content';
 
 export interface IProps {
     isOpen: any;
+    setOpen: any;
+    setCurrentComponent: any;
     className?: string;
 }
 
-export const Menu: React.FunctionComponent<IProps> = ({ isOpen }: IProps) => {
+export const Menu: React.FunctionComponent<IProps> = ({
+    isOpen,
+    setOpen,
+    setCurrentComponent,
+}: IProps) => {
+    const onClick = (componentName: string, isOpen: any) => {
+        setCurrentComponent(componentName);
+        setOpen(isOpen);
+    };
+
     return (
         isOpen && (
             <StyledMenu className="styled-menu" isOpen={isOpen}>
-                <NavSpan>
-                    <Home />
-                </NavSpan>
-                <NavSpan>
-                    <Person />
-                </NavSpan>
-                <NavSpan>
-                    <BriefCase />
-                </NavSpan>
-                <NavSpan>
-                    <Email />
-                </NavSpan>
+                {svg.map((Component: any) => {
+                    return (
+                        <NavSpan
+                            key={Component.id}
+                            onClick={() => onClick(Component.name, false)}
+                        >
+                            <Component.Component />
+                        </NavSpan>
+                    );
+                })}
             </StyledMenu>
         )
     );
@@ -36,6 +45,7 @@ const NavSpan = styled.span<{ onClick?: any }>`
     justify-content: center;
     align-items: center;
 `;
+
 const StyledMenu = styled.div<{ isOpen: any }>`
     z-index: 2;
     transform: ${({ isOpen }) =>

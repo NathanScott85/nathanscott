@@ -1,18 +1,21 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import styled from 'styled-components';
+import { IComponentProps } from '../../lib/interfaces';
 
-export interface IProps {
-    className?: string;
-}
-
-export const ContactForm: React.FunctionComponent<IProps> = ({}: IProps): JSX.Element => {
+export const ContactForm: React.FunctionComponent<IComponentProps> = ({
+    componentType = 'ContactForm',
+    currentComponent,
+}: IComponentProps): JSX.Element => {
     const [state, handleSubmit] = useForm('mrgonvbw');
+    const isVisible = currentComponent == componentType;
+
     if (state.succeeded) {
-        return <ContactForm />;
+        return <ContactForm currentComponent={currentComponent} />;
     }
+
     return (
-        <Form onSubmit={handleSubmit}>
+        <Form onSubmit={handleSubmit} isVisible={isVisible}>
             <h2>Contact form</h2>
             <Paragraph>
                 Fields marked with an asterisk (*) are required.
@@ -52,12 +55,12 @@ export const ContactForm: React.FunctionComponent<IProps> = ({}: IProps): JSX.El
     );
 };
 
-const Form = styled.form<{ isClicked?: any }>`
+const Form = styled.form<{ isVisible?: any }>`
     margin: 20% 10% 0% 0%;
     background-color: #faf9f4;
     color: #1f2326;
-    /* display: ${({ isClicked }) => (isClicked ? 'flex' : 'none')}; */
-    display: flex;
+    ${({ isVisible }) => (isVisible ? 'display: flex' : 'display: none')};
+
     flex-direction: column;
     align-items: center;
     justify-content: center;

@@ -1,14 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
+import { IComponentProps } from '../../lib/interfaces';
 import { vitae } from '../../lib/website-content';
 
-export interface IProps {
-    className?: string;
-}
-
-export const TechnicalKnowledge: React.FunctionComponent<IProps> = ({}: IProps): JSX.Element => {
+export const TechnicalKnowledge: React.FunctionComponent<IComponentProps> = ({
+    componentType = 'TechnicalKnowledge',
+    currentComponent,
+}: IComponentProps): JSX.Element => {
+    const isVisible = currentComponent == componentType;
     return (
-        <TechnicalKnowledgeContainer>
+        <TechnicalKnowledgeContainer isVisible={isVisible}>
             <h3>Technical Knowledge</h3>
             {vitae.map((c: any) => {
                 return (
@@ -55,9 +56,11 @@ export const TechnicalKnowledge: React.FunctionComponent<IProps> = ({}: IProps):
     );
 };
 
-const TechnicalKnowledgeContainer = styled.div<{ isHidden?: any }>`
-    display: ${({ isHidden }) => (isHidden ? 'flex' : 'none')};
-    display: flex;
+const TechnicalKnowledgeContainer = styled.div<{
+    isVisible: any;
+}>`
+    ${({ isVisible }) => (isVisible ? 'display: flex' : 'display: none')};
+
     flex-direction: column;
     justify-content: space-evenly;
     h3 {

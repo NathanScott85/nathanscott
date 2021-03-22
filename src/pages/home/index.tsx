@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import {
     ContactForm,
     Header,
     SocialLinks,
     TechnicalKnowledge,
+    BurgerMenu,
+    Menu,
 } from '../../components';
-import { BurgerMenu } from '../../components/burger-menu';
-import { Menu } from '../../components/burger-menu/menu';
 
 const Home: React.FunctionComponent = (): JSX.Element => {
-    const [isOpen, setOpen] = React.useState(false);
-
+    const [isMenuOpen, setMenuOpen] = useState(false);
+    const [currentComponent, setCurrentComponent] = useState(
+        'TechnicalKnowledge',
+    );
+    const onClick = (newCurrentComponent: string) => {
+        setCurrentComponent(newCurrentComponent);
+    };
     return (
         <HomeContainer>
             <LeftContainer>
@@ -20,11 +25,15 @@ const Home: React.FunctionComponent = (): JSX.Element => {
             </LeftContainer>
             <RightContainer>
                 <Header>
-                    <BurgerMenu isOpen={isOpen} setOpen={setOpen} />
-                    <Menu isOpen={isOpen} />
+                    <BurgerMenu isOpen={isMenuOpen} setOpen={setMenuOpen} />
+                    <Menu
+                        isOpen={isMenuOpen}
+                        setOpen={setMenuOpen}
+                        setCurrentComponent={onClick}
+                    />
                 </Header>
-                <TechnicalKnowledge />
-                <ContactForm />
+                {<TechnicalKnowledge currentComponent={currentComponent} />}
+                {<ContactForm currentComponent={currentComponent} />}
             </RightContainer>
         </HomeContainer>
     );
