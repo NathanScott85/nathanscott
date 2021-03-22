@@ -1,7 +1,7 @@
 import React from 'react';
 import { ISVG } from './';
 
-const SVG: React.FunctionComponent<ISVG> = ({
+export const SVG: React.FunctionComponent<ISVG> = ({
     width = '25px',
     viewBox = '0 0 25 19',
     height = '19px',

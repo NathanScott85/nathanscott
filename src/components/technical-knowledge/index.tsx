@@ -1,10 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
+import { IComponentProps } from '../../lib/interfaces';
 import { vitae } from '../../lib/website-content';
 
-export const TechnicalKnowledge: React.FunctionComponent = (): JSX.Element => {
+export const TechnicalKnowledge: React.FunctionComponent<IComponentProps> = ({
+    componentType = 'TechnicalKnowledge',
+    currentComponent,
+}: IComponentProps): JSX.Element => {
+    const isVisible = currentComponent == componentType;
     return (
-        <TechnicalKnowledgeContainer>
+        <TechnicalKnowledgeContainer isVisible={isVisible}>
             <h3>Technical Knowledge</h3>
             {vitae.map((c: any) => {
                 return (
@@ -17,14 +22,13 @@ export const TechnicalKnowledge: React.FunctionComponent = (): JSX.Element => {
             <Frontend>
                 <h4>Professional Experience:</h4>
                 <p>
-                    {' '}
                     <a
                         href="https://saharadigital.co.uk/"
                         target="_blank"
                         rel="noreferrer"
                     >
                         Sahara Digital
-                    </a>{' '}
+                    </a>
                     | Founder
                 </p>
                 <p>
@@ -34,18 +38,17 @@ export const TechnicalKnowledge: React.FunctionComponent = (): JSX.Element => {
                         rel="noreferrer"
                     >
                         Sahara Digital
-                    </a>{' '}
+                    </a>
                     | Designer & Front-End JS/TS Developer / Freelance
                 </p>
                 <p>
-                    {' '}
                     <a
                         href="https://www.williamhill.com/"
                         target="_blank"
                         rel="noreferrer"
                     >
                         William Hill
-                    </a>{' '}
+                    </a>
                     | Front-End JS/TS Developer
                 </p>
             </Frontend>
@@ -53,8 +56,11 @@ export const TechnicalKnowledge: React.FunctionComponent = (): JSX.Element => {
     );
 };
 
-const TechnicalKnowledgeContainer = styled.div`
-    display: flex;
+const TechnicalKnowledgeContainer = styled.div<{
+    isVisible: any;
+}>`
+    ${({ isVisible }) => (isVisible ? 'display: flex' : 'display: none')};
+
     flex-direction: column;
     justify-content: space-evenly;
     h3 {
