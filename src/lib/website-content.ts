@@ -19,21 +19,21 @@ export const vitae = [
     },
 ];
 
-export const svg = [
-    { id: '1', Component: Home, name: 'TechnicalKnowledge' },
+export const menu = [
+    { id: '1', SVG: Home, name: 'TechnicalKnowledge' },
     {
         id: '2',
-        Component: Person,
+        SVG: Person,
         name: 'AboutMe',
     },
     {
         id: '3',
-        Component: BriefCase,
+        SVG: BriefCase,
         name: 'Portfolio',
     },
     {
         id: '4',
-        Component: Email,
+        SVG: Email,
         name: 'ContactForm',
     },
 ];

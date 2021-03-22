@@ -1,12 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled, { css } from 'styled-components';
-import { svg } from '../../lib/website-content';
+import { menu } from '../../lib/website-content';
+import { SVG } from '../../lib/interfaces/index';
+import { ReactElement } from 'react';
 
 export interface IProps {
     isOpen: any;
-    setOpen: any;
-    setCurrentComponent: any;
+    setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+    setCurrentComponent: (newCurrentComponent: string) => void;
     className?: string;
 }
 
@@ -15,7 +17,7 @@ export const Menu: React.FunctionComponent<IProps> = ({
     setOpen,
     setCurrentComponent,
 }: IProps) => {
-    const onClick = (componentName: string, isOpen: any) => {
+    const onClick = (componentName: string, isOpen: boolean) => {
         setCurrentComponent(componentName);
         setOpen(isOpen);
     };
@@ -23,13 +25,13 @@ export const Menu: React.FunctionComponent<IProps> = ({
     return (
         isOpen && (
             <StyledMenu className="styled-menu" isOpen={isOpen}>
-                {svg.map((Component: any) => {
+                {menu.map((Component: SVG) => {
                     return (
                         <NavSpan
                             key={Component.id}
                             onClick={() => onClick(Component.name, false)}
                         >
-                            <Component.Component />
+                            <Component.SVG />
                         </NavSpan>
                     );
                 })}
@@ -38,7 +40,7 @@ export const Menu: React.FunctionComponent<IProps> = ({
     );
 };
 
-const NavSpan = styled.span<{ onClick?: any }>`
+const NavSpan = styled.span<{ onClick?: () => void }>`
     padding: 0.4rem 0;
     display: flex;
     flex-direction: column;
@@ -46,7 +48,7 @@ const NavSpan = styled.span<{ onClick?: any }>`
     align-items: center;
 `;
 
-const StyledMenu = styled.div<{ isOpen: any }>`
+const StyledMenu = styled.div<{ isOpen: boolean }>`
     z-index: 2;
     transform: ${({ isOpen }) =>
         isOpen ? 'translateX(0)' : 'translateX(-100%)'};

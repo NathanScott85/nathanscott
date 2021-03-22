@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 export interface IProps {
-    isOpen: any;
-    setOpen: any;
+    isOpen: boolean;
+    setOpen: React.Dispatch<React.SetStateAction<boolean>>;
     className?: string;
 }
 
@@ -24,7 +24,7 @@ export const BurgerMenu: React.FunctionComponent<IProps> = ({
     );
 };
 
-const StyledBurger = styled.button<{ isOpen: any }>`
+const StyledBurger = styled.button<{ isOpen: boolean }>`
     position: absolute;
     top: 3.5%;
     right: ${({ isOpen }) => (isOpen ? '2.3%' : '2.5%')};
