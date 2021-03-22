@@ -65,7 +65,6 @@ const TechnicalKnowledgeContainer = styled.div<{
     justify-content: space-evenly;
     h3 {
         padding-top: 1rem;
-        padding-top: 1rem;
     }
     margin: 20% 20% 0% 0%;
 `;
