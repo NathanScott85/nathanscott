@@ -18,16 +18,6 @@ const GlobalStyle = createGlobalStyle`
    body{
        background-color: #f7f4f2;
    }
-
-   body:before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 25%;
-    width: 1px;
-    height: 100%;
-    background-color: #d8d8d8;
-}
 `;
 
 export { theme, GlobalStyle };
