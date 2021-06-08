@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { History } from 'history';
 import { Router, Switch, Route } from 'react-router-dom';
+import { NotFoundPage, Home } from '../pages';
+import { PageLoad } from '../components/page-load';
 
 interface IProps {
     history: History;
@@ -36,11 +38,7 @@ const Routes: React.FunctionComponent<IProps> = ({
     return (
         <Router history={history}>
             <Switch>
-                <Route
-                    exact
-                    path={'/'}
-                    render={({ history }: IProps) => <Home history={history} />}
-                />
+                <Route exact path={'/'} render={() => <PageLoad />} />
                 <Route
                     exact
                     path={process.env.PUBLIC_URL + '*'}
