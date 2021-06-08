@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Col, Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import {
     ContactForm,
@@ -19,10 +20,6 @@ const Home: React.FunctionComponent = (): JSX.Element => {
     };
     return (
         <HomeContainer>
-            <LeftContainer>
-                <h1>NS</h1>
-                <SocialLinks fill={'black'} />
-            </LeftContainer>
             <RightContainer>
                 <Header>
                     <BurgerMenu isOpen={isMenuOpen} setOpen={setMenuOpen} />
@@ -41,7 +38,7 @@ const Home: React.FunctionComponent = (): JSX.Element => {
 
 export default Home;
 
-const LeftContainer = styled.div`
+const LeftContainer = styled(Col)`
     height: 100vh;
     background-color: #faf9f4;
     font-family: 'Tangerine', cursive;
@@ -81,7 +78,7 @@ const RightContainer = styled.div`
     }
 `;
 
-const HomeContainer = styled.div`
-    display: inline-grid;
-    grid-template-columns: 25% 75%;
+const HomeContainer = styled(Container)`
+    /* display: inline-grid; */
+    /* grid-template-columns: 25% 75%; */
 `;
