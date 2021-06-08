@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { vitae } from '../../lib/website-content';
 
 export const TechnicalKnowledge = () => {
     return (
