@@ -2,7 +2,6 @@ import React from 'react';
 import Routes from './app-routes';
 import styled, { css, ThemeProvider } from 'styled-components';
 import { theme, GlobalStyle } from './styled-components';
-
 import { createBrowserHistory } from 'history';
 export const history = createBrowserHistory();
 
