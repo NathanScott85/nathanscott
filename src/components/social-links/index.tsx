@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Instagram, Github, Email } from '../img';
+import { Instagram, Github, Email, LinkedIn } from '../img';
 
 interface ISocialLinks {
     fill?: string;
@@ -13,6 +13,12 @@ export const SocialLinks = ({ fill }: ISocialLinks) => {
                 href="https://www.instagram.com/nathanscott285"
             >
                 <Instagram className="social-links-svg" />
+            </SocialLinksTag>
+            <SocialLinksTag
+                target="_blank"
+                href="https://www.linkedin.com/in/nathan-scott/"
+            >
+                <LinkedIn className="social-links-svg" />
             </SocialLinksTag>
             <SocialLinksTag
                 target="_blank"
