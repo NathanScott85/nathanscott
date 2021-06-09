@@ -2,11 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import { SocialLinks } from '..';
 
-export const PageLoad: React.FunctionComponent = (): JSX.Element => {
+interface IPageLoad {
+    notfound?: string
+}
+export const PageLoad: React.FunctionComponent<IPageLoad> = ({ notfound }: IPageLoad): JSX.Element => {
     return (
         <PageLoadContainer>
             <h1>NS</h1>
             <SocialLinks fill={'black'} />
+            <NotFound>{notfound}</NotFound>
         </PageLoadContainer>
     );
 };
@@ -25,7 +29,8 @@ const PageLoadContainer = styled.div`
     h1 {
         font-size: 3rem;
     }
-    body {
-        margin: 0;
-    }
+`;
+
+const NotFound = styled.div`
+    padding: 1rem;
 `;

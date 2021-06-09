@@ -1,16 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
 import { History } from 'history';
 import { Router, Switch, Route } from 'react-router-dom';
 import { PageLoad } from '../components/page-load';
+import NotFoundPage from '../pages/404';
 
 interface IProps {
     history: History;
 }
-
-const NotFoundPage = (history: any) => {
-    return <div>404 Not Found</div>;
-};
 
 const Routes: React.FunctionComponent<IProps> = ({
     history,
